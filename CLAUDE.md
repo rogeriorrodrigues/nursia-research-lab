@@ -10,6 +10,13 @@
   `tipo(escopo): descrição curta em português`
 - Corpo do commit, quando necessário, deve explicar o "porquê", não o "o quê"
 
+IMPORTANTE — Regras de commit:
+- Use sempre git config user.name "Rogério Rodrigues" e o email que vou fornecer
+- NUNCA adicione "🤖 Generated with Claude Code" nas mensagens de commit
+- NUNCA adicione "Co-Authored-By: Claude" nas mensagens de commit
+- NUNCA mencione Claude Code ou AI no corpo do commit
+- Todas as mensagens devem aparecer como se eu mesmo tivesse escrito
+
 ## Tom
 
 - Português brasileiro por padrão
