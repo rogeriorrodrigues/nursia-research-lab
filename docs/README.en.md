@@ -14,7 +14,7 @@
 
 - [About the project](#-about-the-project)
 - [Why this exists](#-why-this-exists)
-- [The three demos](#-the-three-demos)
+- [The demos](#-the-demos)
 - [Stack overview](#-stack-overview)
 - [Quickstart](#-quickstart)
 - [Research context](#-research-context)
@@ -27,9 +27,9 @@
 
 **NursIA** is a clinical simulation platform with AI built as part of master's research in Health Informatics at UFSC (Universidade Federal de Santa Catarina), inside the [PPGINFOS](https://ppginfos.ufsc.br) program — Florianópolis, Brazil.
 
-The project investigates how local large language models, FHIR-based synthetic patients, and prompt engineering can support nursing education without ever sending patient data to the cloud. Everything runs offline. Nothing leaks. LGPD/GDPR compliance is a side effect of the architecture, not an extra layer bolted on top.
+The project investigates how local large language models, FHIR-based synthetic patients, and prompt engineering can support clinical education for healthcare students and professionals without ever sending patient data to the cloud. Everything runs offline. Nothing leaks. LGPD/GDPR compliance is a side effect of the architecture, not an extra layer bolted on top.
 
-This monorepo collects three public demonstrations from that research. Each demo is small enough to read in a single sitting, runs locally on a laptop, and isolates one specific question about clinical AI.
+This monorepo collects open public demonstrations from that research. Each demo is small enough to read in a single sitting, runs locally on a laptop, and isolates one specific question about clinical AI.
 
 ---
 
@@ -47,7 +47,7 @@ The goal is not to replace commercial clinical AI. The goal is to make the local
 
 ---
 
-## 📚 The three demos
+## 📚 The demos
 
 ### `demos/01-fhir-ollama-local`
 
@@ -148,7 +148,7 @@ This repository is a public artifact of master's research at UFSC. Credits go be
 | **Funding** | FAPESC (Fundação de Amparo à Pesquisa e Inovação do Estado de Santa Catarina) macroproject |
 | **Program** | [PPGINFOS — Postgraduate Program in Health Informatics, UFSC](https://ppginfos.ufsc.br) |
 
-The macroproject targets clinical simulation for nursing education with a strong privacy-by-design constraint: real student data and any future real patient data must stay inside the institution. That constraint is what shapes every technical choice in these demos.
+The macroproject targets clinical simulation for the training of healthcare students and professionals with a strong privacy-by-design constraint: real student data and any future real patient data must stay inside the institution. That constraint is what shapes every technical choice in these demos.
 
 ---
 
@@ -163,7 +163,7 @@ See [`../roadmap.md`](../roadmap.md) for the consolidated roadmap. High-level th
 - 🛠️ **Validation** with UFSC students and professors — in progress.
 - 🔮 **Anonymization layer** with [Microsoft Presidio](https://microsoft.github.io/presidio/) — planned for when real patient data enters the pipeline.
 - 🔮 **MCP Server** for standardized AI–FHIR access — planned.
-- 🔮 **Clinical simulation scenarios** for nursing students (NursIA Protocol) — planned.
+- 🔮 **Clinical simulation scenarios** for healthcare students and professionals (NursIA Protocol) — planned.
 - 📅 **MIE 2026** — presentation in Genoa, May 2026.
 
 ---

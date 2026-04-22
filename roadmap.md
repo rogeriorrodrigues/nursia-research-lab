@@ -1,8 +1,8 @@
 # Roadmap — NursIA Research Lab
 
-Consolidated roadmap across the three demos and the broader NursIA project.
+Consolidated roadmap across the demos and the broader NursIA project.
 
-Roadmap consolidado das três demos e do projeto NursIA mais amplo.
+Roadmap consolidado das demos e do projeto NursIA mais amplo.
 
 ---
 
@@ -25,7 +25,7 @@ Roadmap consolidado das três demos e do projeto NursIA mais amplo.
 ## 🛠️ Em andamento / In progress
 
 - [ ] [RAGAS](https://github.com/explodinggradients/ragas) quality evaluation pipeline (faithfulness > 0.85 target)
-- [ ] Validation with UFSC nursing students and professors
+- [ ] Validation with UFSC healthcare students and professors
 - [ ] Comparative evaluation: typed-call context (demo 01) vs. `$everything` context (demo 03)
 
 ---
@@ -34,7 +34,7 @@ Roadmap consolidado das três demos e do projeto NursIA mais amplo.
 
 - [ ] [Microsoft Presidio](https://microsoft.github.io/presidio/) integration for pre-LLM anonymization (essential when real patient data enters the pipeline)
 - [ ] MCP Server for standardized AI–FHIR access
-- [ ] Clinical simulation scenarios for nursing students (NursIA Protocol)
+- [ ] Clinical simulation scenarios for healthcare students and professionals (NursIA Protocol)
 - [ ] Tutor Mode generalization beyond the JS / CHF case
 - [ ] Web UI for the simulation scenarios (currently CLI-only)
 - [ ] Full integration with the **E4 Nursing** platform (ESEP Porto + VirtualCare)

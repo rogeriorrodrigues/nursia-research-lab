@@ -14,9 +14,9 @@
 
 <br>
 
-**Three demonstrations from the NursIA project — clinical simulation with AI for nursing education.**
+**Open clinical AI + FHIR demonstrations from the NursIA project — clinical simulation with AI for healthcare students and professionals.**
 
-**Três demonstrações do projeto NursIA — simulação clínica com IA para formação em enfermagem.**
+**Demonstrações abertas de IA clínica + FHIR do projeto NursIA — simulação clínica com IA para estudantes e profissionais de saúde.**
 
 <br>
 
@@ -48,9 +48,9 @@ Supervised by **Profa. Dra. Grace Marcon Dal Sasso** (national reference in heal
 
 **NursIA** é uma plataforma de simulação clínica com IA desenvolvida como parte do meu mestrado na UFSC, dentro do programa PPGINFOS. Orientação da Profa. Dra. Grace Marcon Dal Sasso, co-pesquisa com Brunna Cardozo, em parceria com ESEP Porto + VirtualCare, dentro do macroprojeto financiado pela FAPESC.
 
-The three demos in this repository are public artifacts of that research.
+The demos in this repository are public artifacts of that research.
 
-As três demos deste repositório são artefatos públicos dessa pesquisa.
+As demos deste repositório são artefatos públicos dessa pesquisa.
 
 ---
 

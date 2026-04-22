@@ -14,7 +14,7 @@
 
 - [Sul progetto](#-sul-progetto)
 - [Perché esiste](#-perche-esiste)
-- [Le tre demo](#-le-tre-demo)
+- [Le demo](#-le-demo)
 - [Panoramica dello stack](#-panoramica-dello-stack)
 - [Avvio rapido](#-avvio-rapido)
 - [Contesto della ricerca](#-contesto-della-ricerca)
@@ -27,9 +27,9 @@
 
 **NursIA** è una piattaforma di simulazione clinica con IA costruita come parte della mia ricerca di master in Informatica Sanitaria all'UFSC (Universidade Federal de Santa Catarina), all'interno del programma [PPGINFOS](https://ppginfos.ufsc.br) — Florianópolis, Brasile.
 
-La ricerca esamina come i modelli linguistici locali, i pazienti sintetici basati su FHIR e l'ingegneria dei prompt possano supportare la formazione infermieristica senza inviare mai dati dei pazienti al cloud. Tutto gira offline. Niente trapela. La conformità LGPD/GDPR è un effetto collaterale dell'architettura, non uno strato aggiuntivo applicato successivamente.
+La ricerca esamina come i modelli linguistici locali, i pazienti sintetici basati su FHIR e l'ingegneria dei prompt possano supportare la formazione di studenti e professionisti sanitari senza inviare mai dati dei pazienti al cloud. Tutto gira offline. Niente trapela. La conformità LGPD/GDPR è un effetto collaterale dell'architettura, non uno strato aggiuntivo applicato successivamente.
 
-Questo monorepo raccoglie tre dimostrazioni pubbliche di quella ricerca. Ogni demo è abbastanza piccola da essere letta in una sola seduta, gira localmente su un laptop e isola una domanda specifica sull'IA clinica.
+Questo monorepo raccoglie dimostrazioni pubbliche aperte di quella ricerca. Ogni demo è abbastanza piccola da essere letta in una sola seduta, gira localmente su un laptop e isola una domanda specifica sull'IA clinica.
 
 ---
 
@@ -47,7 +47,7 @@ L'obiettivo non è sostituire l'IA clinica commerciale. L'obiettivo è rendere l
 
 ---
 
-## 📚 Le tre demo
+## 📚 Le demo
 
 ### `demos/01-fhir-ollama-local`
 
@@ -148,7 +148,7 @@ Questo repository è un artefatto pubblico della ricerca di master all'UFSC. I c
 | **Finanziamento** | Macroprogetto FAPESC (Fondazione di Sostegno alla Ricerca e Innovazione dello Stato di Santa Catarina) |
 | **Programma** | [PPGINFOS — Programma di Specializzazione in Informatica Sanitaria, UFSC](https://ppginfos.ufsc.br) |
 
-Il macroprogetto si concentra sulla simulazione clinica per la formazione infermieristica con un forte vincolo di privacy-by-design: i dati reali degli studenti e qualsiasi dato reale dei pazienti in futuro devono rimanere all'interno dell'istituzione. Quel vincolo è ciò che modella ogni scelta tecnica in queste demo.
+Il macroprogetto si concentra sulla simulazione clinica per la formazione di studenti e professionisti sanitari con un forte vincolo di privacy-by-design: i dati reali degli studenti e qualsiasi dato reale dei pazienti in futuro devono rimanere all'interno dell'istituzione. Quel vincolo è ciò che modella ogni scelta tecnica in queste demo.
 
 ---
 
@@ -163,7 +163,7 @@ Vedi [`../roadmap.md`](../roadmap.md) per la roadmap consolidata. Temi di alto l
 - 🛠️ **Validazione** con studenti e professori dell'UFSC — in corso.
 - 🔮 **Strato di anonimizzazione** con [Microsoft Presidio](https://microsoft.github.io/presidio/) — pianificato per quando entreranno dati reali nella pipeline.
 - 🔮 **Server MCP** per accesso standardizzato IA–FHIR — pianificato.
-- 🔮 **Scenari di simulazione clinica** per studenti di infermieristica (Protocollo NursIA) — pianificato.
+- 🔮 **Scenari di simulazione clinica** per studenti e professionisti sanitari (Protocollo NursIA) — pianificato.
 - 📅 **MIE 2026** — presentazione a Genova, maggio 2026.
 
 ---

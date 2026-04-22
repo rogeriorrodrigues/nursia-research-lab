@@ -14,7 +14,7 @@
 
 - [Sobre o projeto](#-sobre-o-projeto)
 - [Por que isso existe](#-por-que-isso-existe)
-- [As três demos](#-as-tres-demos)
+- [As demos](#-as-demos)
 - [Visão geral da stack](#-visao-geral-da-stack)
 - [Início rápido](#-inicio-rapido)
 - [Contexto da pesquisa](#-contexto-da-pesquisa)
@@ -27,9 +27,9 @@
 
 **NursIA** é uma plataforma de simulação clínica com IA construída como parte do meu mestrado em Informática em Saúde na UFSC (Universidade Federal de Santa Catarina), dentro do programa [PPGINFOS](https://ppginfos.ufsc.br) — Florianópolis, Brasil.
 
-A pesquisa investiga como modelos de linguagem locais, pacientes sintéticos baseados em FHIR e engenharia de prompt podem apoiar a formação em enfermagem sem nunca enviar dados de paciente pra cloud. Tudo roda offline. Nada vaza. Conformidade LGPD/GDPR é efeito colateral da arquitetura, não uma camada extra colada por cima.
+A pesquisa investiga como modelos de linguagem locais, pacientes sintéticos baseados em FHIR e engenharia de prompt podem apoiar a formação de estudantes e profissionais de saúde sem nunca enviar dados de paciente pra cloud. Tudo roda offline. Nada vaza. Conformidade LGPD/GDPR é efeito colateral da arquitetura, não uma camada extra colada por cima.
 
-Este monorepo reúne três demonstrações públicas dessa pesquisa. Cada demo é pequena o suficiente pra ser lida numa sentada, roda local num notebook e isola uma pergunta específica sobre IA clínica.
+Este monorepo reúne demonstrações públicas abertas dessa pesquisa. Cada demo é pequena o suficiente pra ser lida numa sentada, roda local num notebook e isola uma pergunta específica sobre IA clínica.
 
 ---
 
@@ -47,7 +47,7 @@ O objetivo não é substituir IA clínica comercial. O objetivo é tornar a opç
 
 ---
 
-## 📚 As três demos
+## 📚 As demos
 
 ### `demos/01-fhir-ollama-local`
 
@@ -148,7 +148,7 @@ Este repositório é um artefato público do mestrado na UFSC. Os créditos vão
 | **Financiamento** | Macroprojeto FAPESC (Fundação de Amparo à Pesquisa e Inovação do Estado de Santa Catarina) |
 | **Programa** | [PPGINFOS — Programa de Pós-Graduação em Informática em Saúde, UFSC](https://ppginfos.ufsc.br) |
 
-O macroprojeto mira simulação clínica pra formação em enfermagem com uma restrição forte de privacy-by-design: dados reais de estudantes e qualquer dado real de paciente no futuro precisam ficar dentro da instituição. Essa restrição é o que molda cada escolha técnica nestas demos.
+O macroprojeto mira simulação clínica pra formação de estudantes e profissionais de saúde com uma restrição forte de privacy-by-design: dados reais de estudantes e qualquer dado real de paciente no futuro precisam ficar dentro da instituição. Essa restrição é o que molda cada escolha técnica nestas demos.
 
 ---
 
@@ -163,7 +163,7 @@ Veja [`../roadmap.md`](../roadmap.md) pro roadmap consolidado. Temas em alto ní
 - 🛠️ **Validação** com estudantes e professores da UFSC — em andamento.
 - 🔮 **Camada de anonimização** com [Microsoft Presidio](https://microsoft.github.io/presidio/) — planejada pra quando dados reais entrarem no pipeline.
 - 🔮 **MCP Server** pra acesso padronizado IA–FHIR — planejado.
-- 🔮 **Cenários de simulação clínica** pra estudantes de enfermagem (Protocolo NursIA) — planejado.
+- 🔮 **Cenários de simulação clínica** pra estudantes e profissionais de saúde (Protocolo NursIA) — planejado.
 - 📅 **MIE 2026** — apresentação em Gênova, maio de 2026.
 
 ---
