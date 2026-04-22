@@ -1,0 +1,35 @@
+======================================================================
+CLINICAL AI TUTOR DEMO (Lite) — Resultado
+======================================================================
+
+❌ MODO RESPOSTA (IA genérica — dá a resposta)
+--------------------------------------------------
+Análise:
+
+O paciente JS, 68 anos, apresenta uma condição grave de ICC descompensada, internado em UTI, com sinais vitais instáveis (hipotensão, taquicardia e saturação de oxigênio baixa). A decisão do estudante de aumentar a PEEP de 10 para 14 cmH2O é justificável, considerando que a SatO2 de 94% com FiO2 de 60% é insuficiente. O aumento da PEEP pode ajudar a melhorar a troca gasosa e recrutar alvéolos, o que pode ser benéfico para o paciente.
+
+No entanto, é importante considerar os seguintes pontos:
+
+* A saturação de oxigênio ainda está baixa (94%) e não há garantia de que o aumento da PEEP seja suficiente para melhorá-la.
+* O paciente apresenta edema grave e extremidades frias e cianóticas, o que pode indicar uma insuficiência respiratória grave.
+* A decisão do estudante não considerou outros fatores, como a necessidade de ajustes na ventilação mecânica ou no tratamento com vasopressores.
+
+Recomendação:
+
+* Aumentar a PEEP de 10 para 14 cmH2O e monitorar a SatO2 de oxigênio.
+* Revisar a ventilação mecânica e ajustá-la se necessário, considerando a necessidade de uma troca gasosa mais eficiente.
+* Avaliar a necessidade de ajustes no tratamento com vasopressores ou outros medicamentos.
+* Considerar a possibilidade de uma translocação pulmonar em casos graves de ICC descompensada.
+
+✅ MODO TUTOR (IA educacional — faz perguntas)
+--------------------------------------------------
+Vamos analisar essa decisão do estudante.
+
+Você considerou que a SatO2 de 94% com FiO2 de 60% era insuficiente, mas o que acontece quando olhamos para o valor de pO2? Ele está em 62 mmHg, que não é extremamente baixo. Além disso, você aumentou a PEEP de 10 para 14 cmH2O, mas como você avaliou a resposta do paciente à pressão positiva? Você considerou que o aumento da PEEP poderia ter um efeito mais significativo na troca gasosa?
+
+E o que acontece quando olhamos para os dados clínicos de outros pacientes com ICC descompensada? Como eles responderam ao aumento da PEEP em situações semelhantes à do paciente JS? Você considerou essas variáveis ao tomar sua decisão?
+
+======================================================================
+💡 Mesmo modelo. Mesmo paciente. Prompt diferente.
+   O prompt transforma o modelo de 'respondedor' em 'educador'.
+======================================================================
