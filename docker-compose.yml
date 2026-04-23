@@ -5,6 +5,7 @@ services:
       - "8082:8080"
     environment:
       - hapi.fhir.allow_multiple_delete=true
+      - JAVA_TOOL_OPTIONS=-Xms1g -Xmx4g
 
   synthea:
     build:
