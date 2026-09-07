@@ -67,6 +67,12 @@ Demuestra la operación `$everything` de FHIR: una sola llamada REST devuelve el
 
 → [README de la demo](../demos/03-everything-fhir/README.md) · [Documentación en ES](../demos/03-everything-fhir/docs/README.es.md)
 
+### `demos/04-presidio-br`
+
+Presidio trae reconocedores para 18 países y ninguno para Brasil: el CPF pasa entero por el anonimizador. Esta demo agrega `BR_CPF` y `BR_CNS` con el mismo diseño de los reconocedores nativos (regex + `validate_result()` con dígito verificador) y los mide en un corpus sintético en portugués: recall 0/100 → 100/100; falsos positivos 100 → 0 en 100 números de 11 dígitos que no son CPF. No necesita FHIR ni Ollama.
+
+→ [README de la demo](../demos/04-presidio-br/README.md) · [Documentación en ES](../demos/04-presidio-br/docs/README.es.md)
+
 ---
 
 ## 🛠️ Visión general del stack
@@ -120,6 +126,12 @@ cd demos/03-everything-fhir
 pip install -r requirements.txt
 python3 criar_paciente_teste.py        # crea un paciente de prueba si no tienes ninguno
 python3 demo_everything_fhir.py <patient_id>
+
+# Demo 04 — Presidio + CPF/CNS (no necesita FHIR ni Ollama)
+cd demos/04-presidio-br
+pip install -r requirements.txt
+python3 -m spacy download pt_core_news_sm
+python3 demo_presidio_br.py
 ```
 
 ### 3. Notas para macOS
@@ -159,9 +171,10 @@ Consulta [`../roadmap.md`](../roadmap.md) para la hoja de ruta consolidada. Tema
 - ✅ **Pipeline local básico** (demo 01) — hecho.
 - ✅ **Cambio de modo pedagógico** (demo 02) — hecho.
 - ✅ **Recuperación vía `$everything`** (demo 03) — hecho.
+- ✅ **Reconocedores CPF + CNS para Presidio** (demo 04) — hecho.
 - 🛠️ **Evaluación de calidad** con [RAGAS](https://github.com/explodinggradients/ragas) — en curso.
 - 🛠️ **Validación** con estudiantes y profesores de la UFSC — en curso.
-- 🔮 **Capa de anonimización** con [Microsoft Presidio](https://microsoft.github.io/presidio/) — prevista para cuando entren datos reales en el pipeline.
+- 🔮 **Capa de anonimización** conectada al pipeline (Presidio de la demo 04) — prevista para cuando entren datos reales; PR upstream a [Data Privacy Stack](https://github.com/data-privacy-stack/presidio).
 - 🔮 **Servidor MCP** para acceso estandarizado IA–FHIR — previsto.
 - 🔮 **Escenarios de simulación clínica** para estudiantes y profesionales de la salud (Protocolo NursIA) — previsto.
 - 📅 **MIE 2026** — presentación en Génova, mayo de 2026.

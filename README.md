@@ -33,6 +33,7 @@
 | [01-fhir-ollama-local](demos/01-fhir-ollama-local/) | Full local pipeline: HAPI FHIR + Synthea + Ollama · Pipeline local completo |
 | [02-clinical-ai-tutor](demos/02-clinical-ai-tutor/) | Response mode vs. Tutor mode · IA que pergunta em vez de responder |
 | [03-everything-fhir](demos/03-everything-fhir/) | `$everything` FHIR → LLM context · Histórico completo numa chamada |
+| [04-presidio-br](demos/04-presidio-br/) | Presidio + CPF/CNS recognizers, measured · Anonimização em português com dígito verificador |
 
 Each demo has its own multilingual README inside `demos/<demo>/docs/`.
 
@@ -91,6 +92,8 @@ cd demos/01-fhir-ollama-local && python3 fhir_ollama_demo.py
 cd demos/02-clinical-ai-tutor && python3 demo_tutor_vs_resposta_lite.py
 # or / ou
 cd demos/03-everything-fhir && python3 criar_paciente_teste.py && python3 demo_everything_fhir.py <patient_id>
+# or / ou (no FHIR/Ollama needed · não precisa de FHIR/Ollama)
+cd demos/04-presidio-br && pip install -r requirements.txt && python3 -m spacy download pt_core_news_sm && python3 demo_presidio_br.py
 ```
 
 **Service ports / Portas dos serviços:**
@@ -110,6 +113,7 @@ cd demos/03-everything-fhir && python3 criar_paciente_teste.py && python3 demo_e
 | [Ollama](https://ollama.com) | Local LLM runtime | MIT |
 | [llama3.2:3b](https://ollama.com/library/llama3.2) | Language model (lightweight) | Meta License |
 | [Synthea](https://synthetichealth.github.io/synthea/) | Synthetic patient generator | Apache 2.0 |
+| [Presidio](https://github.com/data-privacy-stack/presidio) | PII detection and anonymization (demo 04) | MIT |
 | [Python](https://python.org) | Demo orchestration | PSF |
 | [Podman](https://podman.io) / [Docker](https://docker.com) | Container runtime | Apache 2.0 / Apache 2.0 |
 

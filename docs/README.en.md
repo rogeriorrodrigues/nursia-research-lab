@@ -67,6 +67,12 @@ Demonstrates the FHIR `$everything` operation: a single REST call returns the en
 
 → [demo README](../demos/03-everything-fhir/README.md) · [English docs](../demos/03-everything-fhir/docs/README.en.md)
 
+### `demos/04-presidio-br`
+
+Presidio ships recognizers for 18 countries and none for Brazil: the CPF walks straight through the anonymizer. This demo adds `BR_CPF` and `BR_CNS` in the same design as the built-in recognizers (regex + `validate_result()` with check digit) and measures them on a synthetic Portuguese corpus: recall 0/100 → 100/100; false positives 100 → 0 on 100 eleven-digit numbers that are not CPFs. No FHIR server or Ollama needed.
+
+→ [demo README](../demos/04-presidio-br/README.md) · [English docs](../demos/04-presidio-br/docs/README.en.md)
+
 ---
 
 ## 🛠️ Stack overview
@@ -120,6 +126,12 @@ cd demos/03-everything-fhir
 pip install -r requirements.txt
 python3 criar_paciente_teste.py        # seeds a test patient if you have none
 python3 demo_everything_fhir.py <patient_id>
+
+# Demo 04 — Presidio + CPF/CNS (no FHIR or Ollama needed)
+cd demos/04-presidio-br
+pip install -r requirements.txt
+python3 -m spacy download pt_core_news_sm
+python3 demo_presidio_br.py
 ```
 
 ### 3. macOS notes
@@ -159,9 +171,10 @@ See [`../roadmap.md`](../roadmap.md) for the consolidated roadmap. High-level th
 - ✅ **Core local pipeline** (demo 01) — done.
 - ✅ **Pedagogical mode shift** (demo 02) — done.
 - ✅ **`$everything` retrieval** (demo 03) — done.
+- ✅ **CPF + CNS recognizers for Presidio** (demo 04) — done.
 - 🛠️ **Quality evaluation** with [RAGAS](https://github.com/explodinggradients/ragas) — in progress.
 - 🛠️ **Validation** with UFSC students and professors — in progress.
-- 🔮 **Anonymization layer** with [Microsoft Presidio](https://microsoft.github.io/presidio/) — planned for when real patient data enters the pipeline.
+- 🔮 **Anonymization layer** wired into the pipeline (Presidio from demo 04) — planned for when real patient data enters it; upstream PR to [Data Privacy Stack](https://github.com/data-privacy-stack/presidio).
 - 🔮 **MCP Server** for standardized AI–FHIR access — planned.
 - 🔮 **Clinical simulation scenarios** for healthcare students and professionals (NursIA Protocol) — planned.
 - 📅 **MIE 2026** — presentation in Genoa, May 2026.
