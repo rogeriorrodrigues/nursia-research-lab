@@ -34,6 +34,7 @@
 | [02-clinical-ai-tutor](demos/02-clinical-ai-tutor/) | Response mode vs. Tutor mode · IA que pergunta em vez de responder |
 | [03-everything-fhir](demos/03-everything-fhir/) | `$everything` FHIR → LLM context · Histórico completo numa chamada |
 | [04-presidio-br](demos/04-presidio-br/) | Presidio + CPF/CNS recognizers, measured · Anonimização em português com dígito verificador |
+| [05-mcp-scopes-smart-on-fhir](demos/05-mcp-scopes-smart-on-fhir/) | MCP scopes per tool, mapped to SMART on FHIR. A read-only token gets HTTP 403 with scope= on create_observation; the per-tool gate is 36 lines the SDK 1.27.0 does not ship. |
 
 Each demo has its own multilingual README inside `demos/<demo>/docs/`.
 

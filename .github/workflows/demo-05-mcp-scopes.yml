@@ -1,0 +1,25 @@
+name: demo-05-mcp-scopes
+
+on:
+  push:
+    paths:
+      - "demos/05-mcp-scopes-smart-on-fhir/**"
+      - ".github/workflows/demo-05-mcp-scopes.yml"
+  pull_request:
+    paths:
+      - "demos/05-mcp-scopes-smart-on-fhir/**"
+      - ".github/workflows/demo-05-mcp-scopes.yml"
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: demos/05-mcp-scopes-smart-on-fhir
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python3 -m pytest tests -q -s
