@@ -9,6 +9,7 @@ An MCP server with two tools and two SMART on FHIR v2 scopes. A token that can r
 ```bash
 pip install -r requirements.txt
 python3 -m pytest tests -q -s
+python3 demo.py          # the same 4 requests, narrated: who calls, which tool, which HTTP status
 python3 server.py        # optional: keep it running and poke it with curl
 ```
 
@@ -16,7 +17,7 @@ Expected output (2026-09-15, mcp 1.27.0):
 
 ```
 statuses=[401, 200, 403, 200] refused=2/4 (1x401 no token, 1x403 wrong scope)
-6 passed in 1.00s
+7 passed in 1.00s
 ```
 
 ## What it does
@@ -92,7 +93,7 @@ Part of the NursIA project (PPGINFOS/UFSC, FAPESC scholarship). License: MIT.
 
 Um servidor MCP com duas ferramentas e dois scopes SMART on FHIR v2. O token que lê Patient toma HTTP 403 quando tenta criar Observation, com o `WWW-Authenticate` que a spec pede. O SDK oficial em Python confere scope na porta do servidor; a recusa por ferramenta são 36 linhas nossas.
 
-Rodar: `pip install -r requirements.txt` e `python3 -m pytest tests -q -s`. Saída esperada: `statuses=[401, 200, 403, 200]`.
+Rodar: `pip install -r requirements.txt` e `python3 -m pytest tests -q -s`. Saída esperada: `statuses=[401, 200, 403, 200]`. `python3 demo.py` mostra as mesmas 4 chamadas narradas (quem chama, qual ferramenta, qual status HTTP).
 
 O que medi: 4 chamadas, 2 recusadas (1 por falta de token, 1 por scope errado). Headers crus em `docs/evidence-2026-09-15.md`.
 

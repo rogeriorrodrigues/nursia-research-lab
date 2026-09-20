@@ -79,3 +79,11 @@ def test_print_the_numbers(capsys):
     with capsys.disabled():
         print(f"\nstatuses={statuses} refused={refused}/4 (1x401 no token, 1x403 wrong scope)")
     assert statuses == [401, 200, 403, 200]
+
+
+def test_demo_script_reports_the_same_numbers(capsys):
+    import demo
+
+    with capsys.disabled():
+        statuses = demo.run()
+    assert statuses == [401, 200, 403, 200]

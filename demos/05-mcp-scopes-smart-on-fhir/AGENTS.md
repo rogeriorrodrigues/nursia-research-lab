@@ -6,6 +6,7 @@ mapped to SMART on FHIR v2 scopes.
 Build and test:
 - pip install -r requirements.txt
 - python3 -m pytest tests -q -s   (prints statuses=[401, 200, 403, 200])
+- python3 demo.py                 (same 4 requests, narrated, for screenshots and video)
 - python3 server.py               (Streamable HTTP on 127.0.0.1:8000/mcp)
 
 Rules for anyone (human or agent) editing this folder:
