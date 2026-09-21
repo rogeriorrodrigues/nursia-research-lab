@@ -1,0 +1,26 @@
+{
+  "sistema": "ollama_phi",
+  "modelo": {
+    "tag": "phi4:14b",
+    "digest": "ac896e5b8b34a1f4efa7b14d7520725140d5512484457fab45d2a4ea14c69dba",
+    "tamanho_gb": 8.4,
+    "quantizacao": "Q4_K_M",
+    "parametros": "14.7B",
+    "familia": "phi3"
+  },
+  "prompt": "extracao_v1.txt",
+  "opcoes": {
+    "temperature": 0,
+    "seed": 2026
+  },
+  "think": false,
+  "ollama": "0.34.2",
+  "maquina": {
+    "sistema": "Darwin 27.0.0",
+    "chip": "Apple M4 Max",
+    "ram_gb": 36.0,
+    "python": "3.11.9"
+  },
+  "inicio": "2026-09-21T17:33:54+00:00",
+  "fim": "2026-09-21T17:50:50+00:00"
+}

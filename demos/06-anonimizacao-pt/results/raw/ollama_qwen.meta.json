@@ -1,0 +1,26 @@
+{
+  "sistema": "ollama_qwen",
+  "modelo": {
+    "tag": "qwen3.8:27b",
+    "digest": "22130167c4c20e20c7b71454612966ca8e8171e9b3cc8ab6ce8aa6cbfec79643",
+    "tamanho_gb": 16.5,
+    "quantizacao": "Q4_K_M",
+    "parametros": "27.3B",
+    "familia": "qwen35"
+  },
+  "prompt": "extracao_v1.txt",
+  "opcoes": {
+    "temperature": 0,
+    "seed": 2026
+  },
+  "think": false,
+  "ollama": "0.34.2",
+  "maquina": {
+    "sistema": "Darwin 27.0.0",
+    "chip": "Apple M4 Max",
+    "ram_gb": 36.0,
+    "python": "3.11.9"
+  },
+  "inicio": "2026-09-21T16:03:16+00:00",
+  "fim": "2026-09-21T16:44:32+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "sistema": "presidio_br",
+  "reconhecedores_br": true,
+  "presidio_analyzer": "2.2.364",
+  "spacy": "3.8.7",
+  "modelo_spacy": "pt_core_news_sm 3.8.0",
+  "tempo_medio_s": 0.0082,
+  "maquina": {
+    "sistema": "Darwin 27.0.0",
+    "chip": "Apple M4 Max",
+    "ram_gb": 36.0,
+    "python": "3.11.9"
+  },
+  "quando": "2026-09-21T17:51:50+00:00"
+}

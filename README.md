@@ -35,6 +35,7 @@
 | [03-everything-fhir](demos/03-everything-fhir/) | `$everything` FHIR → LLM context · Histórico completo numa chamada |
 | [04-presidio-br](demos/04-presidio-br/) | Presidio + CPF/CNS recognizers, measured · Anonimização em português com dígito verificador |
 | [05-mcp-scopes-smart-on-fhir](demos/05-mcp-scopes-smart-on-fhir/) | MCP scopes per tool, mapped to SMART on FHIR. A read-only token gets HTTP 403 with scope= on create_observation; the per-tool gate is 36 lines the SDK 1.27.0 does not ship. |
+| [06-anonimizacao-pt](demos/06-anonimizacao-pt/) | Four anonymizers on the same 200 synthetic Portuguese notes: default Presidio leaks a CPF/CNS in 200/200, Presidio + presidio-br and a local Qwen3.8 27B in 0/200, a local Phi-4 14B in 4/200 because it rewrites the number it found · Quanto dado pessoal cada sistema deixa passar |
 
 Each demo has its own multilingual README inside `demos/<demo>/docs/`.
 

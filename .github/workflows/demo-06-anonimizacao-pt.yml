@@ -1,0 +1,27 @@
+name: demo-06-anonimizacao-pt
+
+on:
+  push:
+    paths:
+      - "demos/06-anonimizacao-pt/**"
+      - "demos/04-presidio-br/presidio_br/**"
+      - ".github/workflows/demo-06-anonimizacao-pt.yml"
+  pull_request:
+    paths:
+      - "demos/06-anonimizacao-pt/**"
+      - "demos/04-presidio-br/presidio_br/**"
+      - ".github/workflows/demo-06-anonimizacao-pt.yml"
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: demos/06-anonimizacao-pt
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python3 -m pytest tests -q -s -rs
