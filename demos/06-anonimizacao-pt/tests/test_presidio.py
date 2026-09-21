@@ -1,15 +1,17 @@
-"""Sistemas 1 e 2 rodam no CI, nas 200 notas, e imprimem a tabela."""
+"""Sistemas 1 e 2 rodam no CI, nas 200 notas, e imprimem a tabela.
+
+Escreve num diretório temporário pra não sobrescrever results/raw/ commitado."""
 
 import evaluate
 import run_presidio
 from corpus import carregar
 
 
-def test_presidio_padrao_e_br_nas_mesmas_notas():
+def test_presidio_padrao_e_br_nas_mesmas_notas(tmp_path):
     notas = carregar()
     for sistema in run_presidio.SISTEMAS:
-        run_presidio.rodar(sistema, notas)
-    res = evaluate.avaliar_todos(notas)
+        run_presidio.rodar(sistema, notas, tmp_path)
+    res = evaluate.avaliar_todos(notas, raw=tmp_path)
     print("\n" + evaluate.tabela_md(res, len(notas)))
     print(evaluate.dados_resultados(res))
 

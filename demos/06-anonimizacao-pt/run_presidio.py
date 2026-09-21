@@ -50,15 +50,15 @@ def analisar(analyzer: AnalyzerEngine, texto: str) -> list[dict]:
     return spans
 
 
-def rodar(sistema: str, notas: list[dict]) -> Path:
+def rodar(sistema: str, notas: list[dict], destino: Path = RAW) -> Path:
     analyzer = criar_analyzer(SISTEMAS[sistema])
-    RAW.mkdir(parents=True, exist_ok=True)
+    destino.mkdir(parents=True, exist_ok=True)
     linhas = []
     for nota in notas:
         t0 = time.perf_counter()
         spans = analisar(analyzer, nota["texto"])
         linhas.append({"id": nota["id"], "spans": spans, "tempo_s": round(time.perf_counter() - t0, 4)})
-    saida = RAW / f"{sistema}.jsonl"
+    saida = destino / f"{sistema}.jsonl"
     saida.write_text("".join(json.dumps(l, ensure_ascii=False) + "\n" for l in linhas), encoding="utf-8")
     meta = {
         "sistema": sistema, "reconhecedores_br": SISTEMAS[sistema],
@@ -67,7 +67,7 @@ def rodar(sistema: str, notas: list[dict]) -> Path:
         "tempo_medio_s": round(sum(l["tempo_s"] for l in linhas) / len(linhas), 4),
         "maquina": info_maquina(), "quando": datetime.now(timezone.utc).isoformat(timespec="seconds"),
     }
-    (RAW / f"{sistema}.meta.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8")
+    (destino / f"{sistema}.meta.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8")
     return saida
 
 

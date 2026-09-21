@@ -20,12 +20,12 @@ SISTEMAS = {"presidio_padrao": "Presidio 2.2.364 padrão + spaCy pt",
             "ollama_qwen": "Ollama (Qwen)", "ollama_phi": "Ollama (Phi)"}
 
 
-def carregar_sistema(sistema: str) -> dict | None:
-    arq = RAW / f"{sistema}.jsonl"
+def carregar_sistema(sistema: str, raw: Path = RAW) -> dict | None:
+    arq = raw / f"{sistema}.jsonl"
     if not arq.exists():
         return None
     linhas = [json.loads(l) for l in arq.read_text(encoding="utf-8").splitlines() if l.strip()]
-    meta_arq = RAW / f"{sistema}.meta.json"
+    meta_arq = raw / f"{sistema}.meta.json"
     meta = json.loads(meta_arq.read_text(encoding="utf-8")) if meta_arq.exists() else {}
     llm = "parse_ok" in linhas[0] if linhas else False
     return {
@@ -36,10 +36,10 @@ def carregar_sistema(sistema: str) -> dict | None:
     }
 
 
-def avaliar_todos(notas: list[dict]) -> dict[str, dict]:
+def avaliar_todos(notas: list[dict], raw: Path = RAW) -> dict[str, dict]:
     saida = {}
     for sistema in SISTEMAS:
-        dados = carregar_sistema(sistema)
+        dados = carregar_sistema(sistema, raw)
         if dados:
             saida[sistema] = {**dados, "metricas": avaliar(notas, dados["predicoes"])}
     return saida
