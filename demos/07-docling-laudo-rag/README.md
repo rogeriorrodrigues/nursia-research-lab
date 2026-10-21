@@ -1,6 +1,6 @@
 # 07 · Lab report to RAG chunks with Docling 2.135.0, no model download
 
-A synthetic Brazilian lab report in DOCX, XLSX and Markdown goes through Docling 2.135.0, becomes a DataFrame, and ends as one RAG chunk per test, with the out-of-range flag computed in code. All three formats flagged the same 3 of 6 tests (hemoglobin, fasting glucose, potassium), in 0.07 s or less per file on CPU. The trap is the naive `float()`: it reads leukocytes "7.850" (7,850 in Brazilian format) as 7.85 and turns an in-range test into an alarm.
+A synthetic Brazilian lab report in DOCX, XLSX and Markdown goes through Docling 2.135.0, becomes a DataFrame, and ends as one RAG chunk per test, with the out-of-range flag computed in code. All three formats flagged the same 3 of 6 tests (hemoglobin, fasting glucose, potassium), in 0.08 s or less per file on CPU. The trap is the naive `float()`: it reads leukocytes "7.850" (7,850 in Brazilian format) as 7.85 and turns an in-range test into an alarm.
 
 [Português abaixo](#pt-br)
 
@@ -27,7 +27,7 @@ CPU only, no GPU, no API key, no network after `pip install`. PDF is left out on
 
 | Format | Conversion time | Tests read | Out of range | Bold matches the math | HierarchicalChunker chunks | Per-test chunks |
 |---|---|---|---|---|---|---|
-| DOCX | 0.07 s | 6 | 3 | yes (3 of 3) | 3 | 6 |
+| DOCX | 0.08 s | 6 | 3 | yes (3 of 3) | 3 | 6 |
 | MD | 0.01 s | 6 | 3 | yes (3 of 3) | 3 | 6 |
 | XLSX | 0.01 s | 6 | 3 | no bold in file | 1 | 6 |
 
@@ -48,7 +48,7 @@ Article: https://rogerio.eti.br/docling-laudo-chunk-rag/
 
 # 07 · Laudo para chunks de RAG com Docling 2.135.0, sem baixar modelo
 
-Um laudo sintético brasileiro em DOCX, XLSX e Markdown passa pelo Docling 2.135.0, vira DataFrame e termina como um chunk por exame, com a marca de "fora da referência" calculada no código. Os três formatos marcaram os mesmos 3 de 6 exames (hemoglobina, glicose em jejum e potássio), em até 0,07 s por arquivo, só com CPU. A armadilha é o `float()` ingênuo: ele lê os leucócitos "7.850" como 7,85 e transforma um exame dentro da faixa em alarme.
+Um laudo sintético brasileiro em DOCX, XLSX e Markdown passa pelo Docling 2.135.0, vira DataFrame e termina como um chunk por exame, com a marca de "fora da referência" calculada no código. Os três formatos marcaram os mesmos 3 de 6 exames (hemoglobina, glicose em jejum e potássio), em até 0,08 s por arquivo, só com CPU. A armadilha é o `float()` ingênuo: ele lê os leucócitos "7.850" como 7,85 e transforma um exame dentro da faixa em alarme.
 
 ## Como rodar
 
