@@ -1,0 +1,6 @@
+docx: 6 exames, fora = ['Glicose em jejum', 'Hemoglobina', 'Potássio'], 0.07 s
+.xlsx: 6 exames, fora = ['Glicose em jejum', 'Hemoglobina', 'Potássio'], 0.01 s
+.md: 6 exames, fora = ['Glicose em jejum', 'Hemoglobina', 'Potássio'], 0.01 s
+....ingênuo: 7.850 -> 7.85; numero_br: 7850.0
+...
+9 passed in 6.45s

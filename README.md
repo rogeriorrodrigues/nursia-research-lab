@@ -36,6 +36,7 @@
 | [04-presidio-br](demos/04-presidio-br/) | Presidio + CPF/CNS recognizers, measured · Anonimização em português com dígito verificador |
 | [05-mcp-scopes-smart-on-fhir](demos/05-mcp-scopes-smart-on-fhir/) | MCP scopes per tool, mapped to SMART on FHIR. A read-only token gets HTTP 403 with scope= on create_observation; the per-tool gate is 36 lines the SDK 1.27.0 does not ship. |
 | [06-anonimizacao-pt](demos/06-anonimizacao-pt/) | Four anonymizers on the same 200 synthetic Portuguese notes: default Presidio leaks a CPF/CNS in 200/200, Presidio + presidio-br and a local Qwen3.8 27B in 0/200, a local Phi-4 14B in 4/200 because it rewrites the number it found · Quanto dado pessoal cada sistema deixa passar |
+| [07-docling-laudo-rag](demos/07-docling-laudo-rag/) | Synthetic lab report (DOCX, XLSX, MD) to one RAG chunk per test with Docling 2.135.0, no model download: same 3 of 6 tests flagged in all formats, and a naive `float()` reads 7.850 as 7.85 · Laudo vira chunk de RAG, sem baixar modelo |
 
 Each demo has its own multilingual README inside `demos/<demo>/docs/`.
 

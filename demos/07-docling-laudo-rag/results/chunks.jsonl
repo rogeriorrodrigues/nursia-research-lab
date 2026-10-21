@@ -1,0 +1,18 @@
+{"origem": "laudo_sintetico.docx", "exame": "Hemoglobina", "fora": true, "texto": "Laboratório Fictício Ltda - Laudo de exames. Hemoglobina: 11,2 g/dL (referência 12,0 a 15,5). FORA DA REFERÊNCIA."}
+{"origem": "laudo_sintetico.docx", "exame": "Leucócitos", "fora": false, "texto": "Laboratório Fictício Ltda - Laudo de exames. Leucócitos: 7.850 /mm³ (referência 4.000 a 11.000)."}
+{"origem": "laudo_sintetico.docx", "exame": "Glicose em jejum", "fora": true, "texto": "Laboratório Fictício Ltda - Laudo de exames. Glicose em jejum: 126 mg/dL (referência 70 a 99). FORA DA REFERÊNCIA."}
+{"origem": "laudo_sintetico.docx", "exame": "Creatinina", "fora": false, "texto": "Laboratório Fictício Ltda - Laudo de exames. Creatinina: 0,9 mg/dL (referência 0,5 a 1,1)."}
+{"origem": "laudo_sintetico.docx", "exame": "Potássio", "fora": true, "texto": "Laboratório Fictício Ltda - Laudo de exames. Potássio: 5,8 mEq/L (referência 3,5 a 5,1). FORA DA REFERÊNCIA."}
+{"origem": "laudo_sintetico.docx", "exame": "TSH", "fora": false, "texto": "Laboratório Fictício Ltda - Laudo de exames. TSH: 2,1 µUI/mL (referência 0,4 a 4,0)."}
+{"origem": "laudo_sintetico.xlsx", "exame": "Hemoglobina", "fora": true, "texto": "laudo_sintetico.xlsx. Hemoglobina: 11,2 g/dL (referência 12,0 a 15,5). FORA DA REFERÊNCIA."}
+{"origem": "laudo_sintetico.xlsx", "exame": "Leucócitos", "fora": false, "texto": "laudo_sintetico.xlsx. Leucócitos: 7.850 /mm³ (referência 4.000 a 11.000)."}
+{"origem": "laudo_sintetico.xlsx", "exame": "Glicose em jejum", "fora": true, "texto": "laudo_sintetico.xlsx. Glicose em jejum: 126 mg/dL (referência 70 a 99). FORA DA REFERÊNCIA."}
+{"origem": "laudo_sintetico.xlsx", "exame": "Creatinina", "fora": false, "texto": "laudo_sintetico.xlsx. Creatinina: 0,9 mg/dL (referência 0,5 a 1,1)."}
+{"origem": "laudo_sintetico.xlsx", "exame": "Potássio", "fora": true, "texto": "laudo_sintetico.xlsx. Potássio: 5,8 mEq/L (referência 3,5 a 5,1). FORA DA REFERÊNCIA."}
+{"origem": "laudo_sintetico.xlsx", "exame": "TSH", "fora": false, "texto": "laudo_sintetico.xlsx. TSH: 2,1 µUI/mL (referência 0,4 a 4,0)."}
+{"origem": "laudo_sintetico.md", "exame": "Hemoglobina", "fora": true, "texto": "laudo_sintetico.md. Hemoglobina: 11,2 g/dL (referência 12,0 a 15,5). FORA DA REFERÊNCIA."}
+{"origem": "laudo_sintetico.md", "exame": "Leucócitos", "fora": false, "texto": "laudo_sintetico.md. Leucócitos: 7.850 /mm³ (referência 4.000 a 11.000)."}
+{"origem": "laudo_sintetico.md", "exame": "Glicose em jejum", "fora": true, "texto": "laudo_sintetico.md. Glicose em jejum: 126 mg/dL (referência 70 a 99). FORA DA REFERÊNCIA."}
+{"origem": "laudo_sintetico.md", "exame": "Creatinina", "fora": false, "texto": "laudo_sintetico.md. Creatinina: 0,9 mg/dL (referência 0,5 a 1,1)."}
+{"origem": "laudo_sintetico.md", "exame": "Potássio", "fora": true, "texto": "laudo_sintetico.md. Potássio: 5,8 mEq/L (referência 3,5 a 5,1). FORA DA REFERÊNCIA."}
+{"origem": "laudo_sintetico.md", "exame": "TSH", "fora": false, "texto": "laudo_sintetico.md. TSH: 2,1 µUI/mL (referência 0,4 a 4,0)."}

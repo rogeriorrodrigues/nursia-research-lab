@@ -1,0 +1,41 @@
+[
+  {
+    "formato": "docx",
+    "segundos": 0.07,
+    "exames": 6,
+    "fora": [
+      "Hemoglobina",
+      "Glicose em jejum",
+      "Potássio"
+    ],
+    "negrito_bate": true,
+    "chunks_padrao": 3,
+    "chunks_por_exame": 6
+  },
+  {
+    "formato": "xlsx",
+    "segundos": 0.01,
+    "exames": 6,
+    "fora": [
+      "Hemoglobina",
+      "Glicose em jejum",
+      "Potássio"
+    ],
+    "negrito_bate": null,
+    "chunks_padrao": 1,
+    "chunks_por_exame": 6
+  },
+  {
+    "formato": "md",
+    "segundos": 0.01,
+    "exames": 6,
+    "fora": [
+      "Hemoglobina",
+      "Glicose em jejum",
+      "Potássio"
+    ],
+    "negrito_bate": true,
+    "chunks_padrao": 3,
+    "chunks_por_exame": 6
+  }
+]
