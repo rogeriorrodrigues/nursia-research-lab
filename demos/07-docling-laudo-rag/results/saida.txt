@@ -1,4 +1,4 @@
-laudo_sintetico.docx: 6 exames em 0.07 s
+laudo_sintetico.docx: 6 exames em 0.08 s
   FORA Hemoglobina          11,2 g/dL (negrito no laudo)
   ok   Leucócitos          7.850 /mm³
   FORA Glicose em jejum      126 mg/dL (negrito no laudo)
@@ -22,4 +22,4 @@ laudo_sintetico.md: 6 exames em 0.01 s
   FORA Potássio              5,8 mEq/L (negrito no laudo)
   ok   TSH                   2,1 µUI/mL
   HierarchicalChunker: 3 chunks; por exame: 6 chunks
-gravado: results/resumo.json, results/chunks.jsonl
+gravado: results/resumo.json, results/chunks.jsonl, results/amostras.txt

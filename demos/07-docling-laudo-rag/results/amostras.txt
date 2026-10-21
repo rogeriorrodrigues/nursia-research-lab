@@ -1,0 +1,22 @@
+== laudo_sintetico.docx: tabela do Docling (export_to_dataframe)
+              Exame Resultado Unidade      Referência
+0       Hemoglobina  **11,2**    g/dL     12,0 a 15,5
+1        Leucócitos     7.850    /mm³  4.000 a 11.000
+2  Glicose em jejum   **126**   mg/dL         70 a 99
+3        Creatinina       0,9   mg/dL       0,5 a 1,1
+4          Potássio   **5,8**   mEq/L       3,5 a 5,1
+5               TSH       2,1  µUI/mL       0,4 a 4,0
+
+== laudo_sintetico.xlsx: tabela do Docling (export_to_dataframe)
+              Exame Resultado Unidade      Referência
+0       Hemoglobina      11,2    g/dL     12,0 a 15,5
+1        Leucócitos     7.850    /mm³  4.000 a 11.000
+2  Glicose em jejum       126   mg/dL         70 a 99
+3        Creatinina       0,9   mg/dL       0,5 a 1,1
+4          Potássio       5,8   mEq/L       3,5 a 5,1
+5               TSH       2,1  µUI/mL       0,4 a 4,0
+
+== laudo_sintetico.docx: HierarchicalChunker
+0  Paciente: Maria Teste da Silva (dado sintético) - Coleta: 01/10/2026
+1  Hemoglobina, Resultado = **11,2**. Hemoglobina, Unidade = g/dL. Hemoglobina, Referência = 12,0 a 15,5. Leucócitos, Resultado = 7.850. Leucócitos, Unidade = /mm³. Leucócitos, Referência = 4.000 a 11.000. Glicose em jejum, Resultado = **126**. Glicose em jejum, Unidade = mg/dL. Glicose em jejum, Referência = 70 a 99. Creatinina, Resultado = 0,9. Creatinina, Unidade = mg/dL. Creatinina, Referência = 0,5 a 1,1. Potássio, Resultado = **5,8**. Potássio, Unidade = mEq/L. Potássio, Referência = 3,5 a 5,1. TSH, Resultado = 2,1. TSH, Unidade = µUI/mL. TSH, Referência = 0,4 a 4,0
+2  Valores em negrito estão fora da referência.

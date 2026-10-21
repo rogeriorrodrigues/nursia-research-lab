@@ -96,12 +96,21 @@ def main() -> None:
         jsonl += r["chunks"]
     saida = AQUI / "results"
     saida.mkdir(exist_ok=True)
+    amostras = []
+    for nome in ("laudo_sintetico.docx", "laudo_sintetico.xlsx"):
+        doc = CONVERSOR.convert(str(AQUI / "dados" / nome)).document
+        amostras.append(f"== {nome}: tabela do Docling (export_to_dataframe)\n"
+                        f"{doc.tables[0].export_to_dataframe(doc=doc)}\n")
+    r = processar(AQUI / "dados" / "laudo_sintetico.docx")
+    amostras.append("== laudo_sintetico.docx: HierarchicalChunker")
+    amostras += [f"{i}  {t}" for i, t in enumerate(r["chunks_padrao"])]
+    (saida / "amostras.txt").write_text("\n".join(amostras) + "\n", encoding="utf-8")
     (saida / "resumo.json").write_text(
         json.dumps(resumo, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     with (saida / "chunks.jsonl").open("w", encoding="utf-8") as f:
         for c in jsonl:
             f.write(json.dumps(c, ensure_ascii=False) + "\n")
-    print("gravado: results/resumo.json, results/chunks.jsonl")
+    print("gravado: results/resumo.json, results/chunks.jsonl, results/amostras.txt")
 
 
 if __name__ == "__main__":
