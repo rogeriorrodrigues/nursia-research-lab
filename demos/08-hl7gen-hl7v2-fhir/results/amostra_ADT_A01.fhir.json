@@ -1,0 +1,62 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "family": "1QLNAM02",
+            "given": [
+              "2AOBAZTT",
+              "B1PN68JH"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "OKAKG4SL^EMR^MD^FQJ6WF34^885.54^311.12^732.22^445.14^OJ90DWOB^NAUNQUBP^ZIS74VN4^QA1VKK3K"
+          }
+        ],
+        "gender": "unknown",
+        "birthDate": "2016-05-25",
+        "address": [
+          {
+            "line": [
+              "5NN00HXS"
+            ],
+            "city": "3FQZXEYV",
+            "state": "WGG8OQAE"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "status": "unknown",
+        "class": {
+          "code": "AMB"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "ZF68DH1O",
+              "display": "8HDEJV8K"
+            }
+          ],
+          "text": "8HDEJV8K"
+        },
+        "valueString": "RYXZ"
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "family": "SJP0AVS8",
+            "given": [
+              "ENHCGODD",
+              "9OAHJ2S6"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "502T40GQ^NET^Internet^7WQQ84Z3^694.37^631.17^276.61^889.52^QZCNSPLD^ZKZSE836^8JYAKG71^K919CTJJ"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2012-08-31",
+        "address": [
+          {
+            "line": [
+              "VWK9T9M7"
+            ],
+            "city": "ZR77FQ68",
+            "state": "ZHE83CLK"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "status": "unknown",
+        "class": {
+          "code": "AMB"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "3THFWRTC",
+              "display": "DOQQ0F3F"
+            }
+          ],
+          "text": "DOQQ0F3F"
+        },
+        "valueString": "H9ZF"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "1W4AE7W7",
+              "display": "D4LISSDA"
+            }
+          ],
+          "text": "D4LISSDA"
+        },
+        "valueString": "5I7Q"
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "hl7gen": "0.2.0",
+  "tipos_hl7_v25": 185,
+  "geram": 185,
+  "validam": 185,
+  "convertem_r4b": 8,
+  "convertem_r5": 8,
+  "tipos_suportados_pelo_codigo": [
+    "ADT_A01",
+    "ADT_A02",
+    "ADT_A03",
+    "ADT_A04",
+    "ADT_A05",
+    "ADT_A06",
+    "ADT_A08",
+    "ORM_O01",
+    "ORU_R01",
+    "SIU_S12"
+  ],
+  "erros_r4b": {
+    "UnsupportedMessageTypeError": 177
+  },
+  "lote_ADT_A01": {
+    "mensagens": 100,
+    "geradas": 100,
+    "validas": 100,
+    "convertidas": 100,
+    "pacientes": 100,
+    "sem_identifier": 100,
+    "nome_token": 100,
+    "sem_genero": 39,
+    "telecom_cru": 100,
+    "encontros": 100,
+    "classe_por_padrao": 67,
+    "observacoes": 100,
+    "obs_string_vazia": 0,
+    "bytes_hl7": 3543160,
+    "bytes_fhir": 69130,
+    "campos_hl7": 63300,
+    "folhas_fhir": 2161,
+    "recursos": 300,
+    "classes_encounter": {
+      "AMB": 79,
+      "EMER": 12,
+      "IMP": 9
+    },
+    "tipo_valor_obs": {
+      "valueString": 100
+    }
+  },
+  "lote_ORU_R01": {
+    "mensagens": 100,
+    "geradas": 100,
+    "validas": 100,
+    "convertidas": 100,
+    "pacientes": 100,
+    "sem_identifier": 100,
+    "nome_token": 100,
+    "sem_genero": 35,
+    "telecom_cru": 100,
+    "encontros": 100,
+    "classe_por_padrao": 63,
+    "observacoes": 200,
+    "obs_string_vazia": 0,
+    "bytes_hl7": 2632542,
+    "bytes_fhir": 86846,
+    "campos_hl7": 45100,
+    "folhas_fhir": 2765,
+    "recursos": 400,
+    "classes_encounter": {
+      "AMB": 74,
+      "IMP": 15,
+      "EMER": 11
+    },
+    "tipo_valor_obs": {
+      "valueString": 200
+    }
+  },
+  "caso_br": {
+    "valida": true,
+    "patient_tem_identifier": false,
+    "cpf_no_bundle": false,
+    "cns_no_bundle": false,
+    "acentos_preservados": true,
+    "data_impossivel_valida": true,
+    "data_impossivel_conversao": "ValidationError"
+  }
+}

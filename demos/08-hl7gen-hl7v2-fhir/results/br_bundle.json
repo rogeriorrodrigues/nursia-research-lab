@@ -1,0 +1,46 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "family": "Conceição",
+            "given": [
+              "João Paulo",
+              "Silva"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(48)99999-0000"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1980-03-15",
+        "address": [
+          {
+            "line": [
+              "Rua das Flores 10"
+            ],
+            "city": "Florianópolis",
+            "state": "SC"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "status": "unknown",
+        "class": {
+          "code": "IMP"
+        }
+      }
+    }
+  ]
+}
