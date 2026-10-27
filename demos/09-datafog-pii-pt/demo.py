@@ -68,6 +68,7 @@ def avaliar(notas: list[dict], previsoes: dict[str, dict]) -> dict:
     notas_com_doc = notas_vazadas = 0
     rotulos_em_documento: Counter = Counter()
     distratores = Counter()
+    datas = {k: Counter() for k in ("por extenso", "numérica, 1º campo até 12", "numérica, 1º campo acima de 12")}
     cpf_formato = {k: Counter() for k in ("BR_CPF sem pontuação", "BR_CPF com pontuação")}
     for nota in notas:
         prev = previsoes[nota["id"]]
@@ -85,6 +86,13 @@ def avaliar(notas: list[dict], previsoes: dict[str, dict]) -> dict:
             c["parcial"] += (not cob) and any(sobrepoe(a, b, s["inicio"], s["fim"]) for a, b in intervalos)
             vazou = s["texto"] in prev["redigido"]
             c["vazou"] += vazou
+            if s["tipo"] == "DATA":
+                if not s["texto"][0].isdigit() or not s["texto"][:2].isdigit() or "/" not in s["texto"]:
+                    grupo = "por extenso"
+                else:
+                    grupo = "numérica, 1º campo até 12" if int(s["texto"][:2]) <= 12 else "numérica, 1º campo acima de 12"
+                datas[grupo]["suporte"] += 1
+                datas[grupo]["coberto"] += cob
             if s["tipo"] == "BR_CPF":
                 chave = "BR_CPF sem pontuação" if s["texto"].isdigit() else "BR_CPF com pontuação"
                 cpf_formato[chave]["suporte"] += 1
@@ -104,6 +112,7 @@ def avaliar(notas: list[dict], previsoes: dict[str, dict]) -> dict:
         "por_tipo": {t: dict(c) for t, c in por_tipo.items()},
         "notas_com_doc": notas_com_doc,
         "notas_vazadas": notas_vazadas,
+        "datas_por_formato": {k: dict(c) for k, c in datas.items()},
         "cpf_por_formato": {k: dict(c) for k, c in cpf_formato.items()},
         "rotulos_em_documento": dict(rotulos_em_documento),
         "falso_positivo_distratores": dict(distratores),
@@ -127,6 +136,7 @@ def tabela(m: dict, tempo_medio: float, versao: str) -> str:
         "",
         f"Notas com CPF ou CNS: {m['notas_com_doc']}; notas em que algum CPF/CNS ainda aparece depois do redact: {m['notas_vazadas']}",
         f"Entidades achadas por tipo do DataFog: {m['entidades_por_tipo']}",
+        f"Data coberta por formato: {m['datas_por_formato']}",
         f"CPF coberto por formato: {m['cpf_por_formato']}",
         f"Rótulo que o DataFog deu ao que cobriu CPF/CNS: {m['rotulos_em_documento']}",
         f"Falsos positivos em números que não são dado pessoal: {m['falso_positivo_distratores']}",

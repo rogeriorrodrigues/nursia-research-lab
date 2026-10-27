@@ -1,7 +1,7 @@
 {
   "datafog": "4.9.0",
   "notas": 200,
-  "tempo_medio_s": 0.000194,
+  "tempo_medio_s": 0.000159,
   "por_tipo": {
     "PESSOA": {
       "suporte": 292,
@@ -55,6 +55,20 @@
   },
   "notas_com_doc": 200,
   "notas_vazadas": 196,
+  "datas_por_formato": {
+    "por extenso": {
+      "suporte": 50,
+      "coberto": 0
+    },
+    "numérica, 1º campo até 12": {
+      "suporte": 17,
+      "coberto": 17
+    },
+    "numérica, 1º campo acima de 12": {
+      "suporte": 31,
+      "coberto": 0
+    }
+  },
   "cpf_por_formato": {
     "BR_CPF sem pontuação": {
       "suporte": 66,

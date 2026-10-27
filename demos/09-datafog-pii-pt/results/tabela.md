@@ -1,4 +1,4 @@
-DataFog 4.9.0, engine regex, 7 tipos do corpus, tempo médio 0.19 ms por nota
+DataFog 4.9.0, engine regex, 7 tipos do corpus, tempo médio 0.16 ms por nota
 
 | Tipo | Suporte | Exato | Coberto | Parcial | Vazou após redact |
 |---|---|---|---|---|---|
@@ -12,6 +12,7 @@ DataFog 4.9.0, engine regex, 7 tipos do corpus, tempo médio 0.19 ms por nota
 
 Notas com CPF ou CNS: 200; notas em que algum CPF/CNS ainda aparece depois do redact: 196
 Entidades achadas por tipo do DataFog: {'ZIP_CODE': 43, 'EMAIL': 26, 'DATE': 17, 'PHONE': 10}
+Data coberta por formato: {'por extenso': {'suporte': 50, 'coberto': 0}, 'numérica, 1º campo até 12': {'suporte': 17, 'coberto': 17}, 'numérica, 1º campo acima de 12': {'suporte': 31, 'coberto': 0}}
 CPF coberto por formato: {'BR_CPF sem pontuação': {'suporte': 66, 'coberto': 8}, 'BR_CPF com pontuação': {'suporte': 67, 'coberto': 0}}
 Rótulo que o DataFog deu ao que cobriu CPF/CNS: {'BR_CPF -> PHONE': 8}
 Falsos positivos em números que não são dado pessoal: {'protocolo': 2}

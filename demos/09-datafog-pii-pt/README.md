@@ -40,12 +40,13 @@ Há também **Parcial**: a entidade encosta no span, mas sobra parte dele (ex.: 
 
 - Notas com CPF ou CNS: 200. Notas em que algum CPF ou CNS ainda aparece depois do `redact()`: **196**.
 - CPF coberto por formato: sem pontuação 8/66, com pontuação 0/67. Os 8 foram rotulados `PHONE`.
+- Datas: 17 de 98. As 50 por extenso ("3 de março") não entram. Das 48 numéricas, entram as 17 cujo primeiro campo é até 12 e nenhuma das 31 com primeiro campo acima de 12 (ex.: `24/04/25`): o regex lê mês/dia, formato americano.
 - Entidades achadas pelo DataFog nas 200 notas: ZIP_CODE 43, EMAIL 26, DATE 17, PHONE 10.
 - Telefones no formato `99123-4567` viraram `ZIP_CODE`; com DDD, o DDD fica de fora (27 parciais).
 - Falsos positivos em números que não são dado pessoal (lote, leito, dose, pressão, protocolo): 2, ambos em protocolo.
-- Tempo médio: cerca de 0,2 ms por nota nesta máquina (CPU, Python 3.11; 0,15 a 0,21 ms em quatro rodadas; o tempo muda a cada rodada, o resto é determinístico).
+- Tempo médio: cerca de 0,2 ms por nota nesta máquina (CPU, Python 3.11; 0,15 a 0,21 ms nas rodadas que fiz; o tempo muda a cada rodada, o resto é determinístico).
 
-Para comparar, a demo 06 mediu o Presidio 2.2.364 padrão deixando CPF ou CNS passar em 200 das 200 notas, e o Presidio + presidio-br em 0 de 200.
+Para comparar, a demo 06 mediu o Presidio 2.2.364 padrão + spaCy pt deixando CPF ou CNS passar em 200 das 200 notas, e o Presidio + presidio-br em 0 de 200. Em CPF e CNS o DataFog regex fica no mesmo lugar do Presidio padrão; em nome e data o Presidio com spaCy foi melhor (PESSOA R 82,2% e DATA R 49,0%, contra 0% e 17,3% do DataFog, ambos em match estrito).
 
 `results/exemplo.txt` mostra a primeira nota antes e depois: nada foi redigido. `results/raw.jsonl` guarda as entidades achadas em cada nota; `results/metricas.json` tem os números crus.
 
@@ -55,7 +56,7 @@ Para comparar, a demo 06 mediu o Presidio 2.2.364 padrão deixando CPF ou CNS pa
 - O engine regex do 4.9.0 lista 7 tipos (`EMAIL`, `PHONE`, `SSN`, `CREDIT_CARD`, `IP_ADDRESS`, `DATE`, `ZIP_CODE`). Não existe CPF, CNS, nome nem endereço em português. As linhas PESSOA e ENDERECO em 0% são o esperado, não um defeito.
 - 200 notas sintéticas, 4 estilos, uma semente. Notas reais têm mais ruído; o corpus foi montado com casos difíceis de propósito (CPF sem pontuação em 49,6%).
 - Mede detecção e o texto depois do `redact()`. Não mede reidentificação por combinação de campos.
-- Não testei a opção `locales`: o 4.9.0 só aceita `de` (alemão).
+- A opção `locales` não ajuda em português: `datafog.scan(texto, locales=["pt"])` levanta `ValueError: locale must be one of: de, de-de, de_de` no 4.9.0. Vi pela mensagem de erro; a demo não usa `locales`.
 - Todo dado é sintético: CPF e CNS passam no dígito verificador mas são sorteados com semente fixa e não pertencem a ninguém. Nomes, ruas e telefones saem de listas curtas inventadas.
 
 ## Fonte
