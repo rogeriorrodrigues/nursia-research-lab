@@ -1,0 +1,132 @@
+{
+  "pyomop": "6.4.0",
+  "contagem": {
+    "Patient": {
+      "fhir": 60,
+      "person": 60
+    },
+    "Encounter": {
+      "fhir": 109,
+      "visit_occurrence": 109
+    },
+    "Condition": {
+      "fhir": 90,
+      "condition_occurrence": 90
+    },
+    "Observation": {
+      "fhir": 120,
+      "measurement": 120,
+      "observation": 120
+    },
+    "MedicationRequest": {
+      "fhir": 60,
+      "drug_exposure": 60
+    }
+  },
+  "fidelidade": {
+    "person: sexo de origem": [
+      60,
+      60
+    ],
+    "person: data de nascimento": [
+      60,
+      60
+    ],
+    "measurement: código, valor e data": [
+      120,
+      120
+    ],
+    "condition_occurrence: código e data": [
+      90,
+      90
+    ],
+    "visit_occurrence: início, fim e classe": [
+      109,
+      109
+    ],
+    "drug_exposure: código e data": [
+      60,
+      60
+    ]
+  },
+  "dado_pessoal_em_alguma_tabela": {
+    "pacientes": 60,
+    "achados": {
+      "CPF": 0,
+      "CNS": 0,
+      "nome completo": 0,
+      "sobrenome": 0,
+      "telefone": 0,
+      "rua": 0,
+      "CEP": 0
+    }
+  },
+  "concept_id_zero_ou_nulo": {
+    "person.gender_concept_id": [
+      0,
+      60
+    ],
+    "person.race_concept_id": [
+      60,
+      60
+    ],
+    "person.ethnicity_concept_id": [
+      60,
+      60
+    ],
+    "visit_occurrence.visit_concept_id": [
+      109,
+      109
+    ],
+    "condition_occurrence.condition_concept_id": [
+      90,
+      90
+    ],
+    "measurement.measurement_concept_id": [
+      120,
+      120
+    ],
+    "measurement.unit_concept_id": [
+      120,
+      120
+    ],
+    "observation.observation_concept_id": [
+      120,
+      120
+    ],
+    "drug_exposure.drug_concept_id": [
+      60,
+      60
+    ]
+  },
+  "com_visit_occurrence_id": {
+    "condition_occurrence": [
+      0,
+      90
+    ],
+    "measurement": [
+      0,
+      120
+    ],
+    "observation": [
+      0,
+      120
+    ],
+    "drug_exposure": [
+      0,
+      60
+    ]
+  },
+  "linhas_na_tabela_concept": 0,
+  "person_source_value_exemplo": [
+    [
+      "p001"
+    ],
+    [
+      "p002"
+    ],
+    [
+      "p003"
+    ]
+  ]
+}
