@@ -1,0 +1,80 @@
+{
+  "datafog": "4.9.0",
+  "notas": 200,
+  "tempo_medio_s": 0.000208,
+  "por_tipo": {
+    "PESSOA": {
+      "suporte": 292,
+      "exato": 0,
+      "coberto": 0,
+      "parcial": 0,
+      "vazou": 292
+    },
+    "BR_CPF": {
+      "suporte": 133,
+      "exato": 0,
+      "coberto": 8,
+      "parcial": 0,
+      "vazou": 125
+    },
+    "BR_CNS": {
+      "suporte": 120,
+      "exato": 0,
+      "coberto": 0,
+      "parcial": 0,
+      "vazou": 120
+    },
+    "DATA": {
+      "suporte": 98,
+      "exato": 17,
+      "coberto": 17,
+      "parcial": 0,
+      "vazou": 81
+    },
+    "TELEFONE": {
+      "suporte": 60,
+      "exato": 0,
+      "coberto": 16,
+      "parcial": 27,
+      "vazou": 17
+    },
+    "EMAIL": {
+      "suporte": 26,
+      "exato": 26,
+      "coberto": 26,
+      "parcial": 0,
+      "vazou": 0
+    },
+    "ENDERECO": {
+      "suporte": 58,
+      "exato": 0,
+      "coberto": 0,
+      "parcial": 0,
+      "vazou": 58
+    }
+  },
+  "notas_com_doc": 200,
+  "notas_vazadas": 196,
+  "cpf_por_formato": {
+    "BR_CPF sem pontuação": {
+      "suporte": 66,
+      "coberto": 8
+    },
+    "BR_CPF com pontuação": {
+      "suporte": 67,
+      "coberto": 0
+    }
+  },
+  "rotulos_em_documento": {
+    "BR_CPF -> PHONE": 8
+  },
+  "falso_positivo_distratores": {
+    "protocolo": 2
+  },
+  "entidades_por_tipo": {
+    "ZIP_CODE": 43,
+    "EMAIL": 26,
+    "DATE": 17,
+    "PHONE": 10
+  }
+}

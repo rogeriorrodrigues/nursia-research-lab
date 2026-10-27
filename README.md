@@ -38,6 +38,7 @@
 | [06-anonimizacao-pt](demos/06-anonimizacao-pt/) | Four anonymizers on the same 200 synthetic Portuguese notes: default Presidio leaks a CPF/CNS in 200/200, Presidio + presidio-br and a local Qwen3.8 27B in 0/200, a local Phi-4 14B in 4/200 because it rewrites the number it found · Quanto dado pessoal cada sistema deixa passar |
 | [07-docling-laudo-rag](demos/07-docling-laudo-rag/) | Synthetic lab report (DOCX, XLSX, MD) to one RAG chunk per test with Docling 2.135.0, no model download: same 3 of 6 tests flagged in all formats, and a naive `float()` reads 7.850 as 7.85 · Laudo vira chunk de RAG, sem baixar modelo |
 | [08-hl7gen-hl7v2-fhir](demos/08-hl7gen-hl7v2-fhir/) | hl7gen 0.2.0 on synthetic HL7 v2: 185 message types pass the validator, 8 convert to FHIR, and a CPF/CNS in PID-3 never reaches the Patient · HL7 v2 sintético vira FHIR, e o conversor descarta o CPF |
+| [09-datafog-pii-pt](demos/09-datafog-pii-pt/) | DataFog 4.9.0 (regex engine) on the same 200 synthetic Portuguese notes: 26/26 emails covered, 8/133 CPFs (all mislabeled as phone) and 0/120 CNS, so 196 of 200 notes still hold a full CPF or CNS after `redact()` · O que a camada regex do DataFog pega em nota clínica em português |
 
 Each demo has its own multilingual README inside `demos/<demo>/docs/`.
 

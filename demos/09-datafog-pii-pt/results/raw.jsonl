@@ -1,0 +1,200 @@
+{"id": "nota_001", "entidades": []}
+{"id": "nota_002", "entidades": []}
+{"id": "nota_003", "entidades": [{"tipo": "ZIP_CODE", "inicio": 279, "fim": 289, "texto": "93397-8362"}]}
+{"id": "nota_004", "entidades": [{"tipo": "EMAIL", "inicio": 266, "fim": 308, "texto": "joao.pedro.ferreira.cardoso@exemplo.com.br"}]}
+{"id": "nota_005", "entidades": [{"tipo": "DATE", "inicio": 234, "fim": 244, "texto": "02/11/2025"}]}
+{"id": "nota_006", "entidades": [{"tipo": "DATE", "inicio": 163, "fim": 171, "texto": "06/06/26"}, {"tipo": "DATE", "inicio": 223, "fim": 231, "texto": "04/09/25"}]}
+{"id": "nota_007", "entidades": [{"tipo": "ZIP_CODE", "inicio": 151, "fim": 161, "texto": "93172-2662"}]}
+{"id": "nota_008", "entidades": [{"tipo": "EMAIL", "inicio": 101, "fim": 123, "texto": "fabio.rosa@exemplo.org"}, {"tipo": "EMAIL", "inicio": 196, "fim": 218, "texto": "fabio.rosa@exemplo.org"}]}
+{"id": "nota_009", "entidades": []}
+{"id": "nota_010", "entidades": []}
+{"id": "nota_011", "entidades": [{"tipo": "ZIP_CODE", "inicio": 293, "fim": 303, "texto": "99739-4557"}]}
+{"id": "nota_012", "entidades": []}
+{"id": "nota_013", "entidades": []}
+{"id": "nota_014", "entidades": [{"tipo": "DATE", "inicio": 266, "fim": 276, "texto": "08/06/2025"}]}
+{"id": "nota_015", "entidades": []}
+{"id": "nota_016", "entidades": []}
+{"id": "nota_017", "entidades": []}
+{"id": "nota_018", "entidades": []}
+{"id": "nota_019", "entidades": [{"tipo": "ZIP_CODE", "inicio": 201, "fim": 211, "texto": "92550-6783"}]}
+{"id": "nota_020", "entidades": []}
+{"id": "nota_021", "entidades": []}
+{"id": "nota_022", "entidades": []}
+{"id": "nota_023", "entidades": [{"tipo": "ZIP_CODE", "inicio": 322, "fim": 332, "texto": "99689-3001"}]}
+{"id": "nota_024", "entidades": [{"tipo": "ZIP_CODE", "inicio": 105, "fim": 115, "texto": "92895-8330"}]}
+{"id": "nota_025", "entidades": [{"tipo": "ZIP_CODE", "inicio": 178, "fim": 188, "texto": "99874-6767"}]}
+{"id": "nota_026", "entidades": []}
+{"id": "nota_027", "entidades": []}
+{"id": "nota_028", "entidades": [{"tipo": "EMAIL", "inicio": 312, "fim": 346, "texto": "ana.beatriz.ribeiro@exemplo.com.br"}]}
+{"id": "nota_029", "entidades": []}
+{"id": "nota_030", "entidades": [{"tipo": "ZIP_CODE", "inicio": 118, "fim": 128, "texto": "97448-8747"}]}
+{"id": "nota_031", "entidades": [{"tipo": "EMAIL", "inicio": 196, "fim": 238, "texto": "pedro.henrique.almeida.machado@exemplo.org"}]}
+{"id": "nota_032", "entidades": []}
+{"id": "nota_033", "entidades": []}
+{"id": "nota_034", "entidades": []}
+{"id": "nota_035", "entidades": [{"tipo": "EMAIL", "inicio": 186, "fim": 214, "texto": "maria.clara.rosa@exemplo.org"}, {"tipo": "ZIP_CODE", "inicio": 250, "fim": 260, "texto": "96105-3450"}]}
+{"id": "nota_036", "entidades": [{"tipo": "EMAIL", "inicio": 298, "fim": 332, "texto": "fabio.barbosa.ferreira@exemplo.org"}]}
+{"id": "nota_037", "entidades": []}
+{"id": "nota_038", "entidades": []}
+{"id": "nota_039", "entidades": []}
+{"id": "nota_040", "entidades": [{"tipo": "ZIP_CODE", "inicio": 139, "fim": 149, "texto": "98086-4292"}]}
+{"id": "nota_041", "entidades": [{"tipo": "EMAIL", "inicio": 178, "fim": 211, "texto": "maria.eduarda.cardoso@exemplo.org"}]}
+{"id": "nota_042", "entidades": []}
+{"id": "nota_043", "entidades": []}
+{"id": "nota_044", "entidades": []}
+{"id": "nota_045", "entidades": []}
+{"id": "nota_046", "entidades": []}
+{"id": "nota_047", "entidades": [{"tipo": "DATE", "inicio": 215, "fim": 225, "texto": "04/08/2025"}]}
+{"id": "nota_048", "entidades": [{"tipo": "EMAIL", "inicio": 311, "fim": 343, "texto": "igor.ribeiro.machado@exemplo.org"}]}
+{"id": "nota_049", "entidades": [{"tipo": "ZIP_CODE", "inicio": 257, "fim": 267, "texto": "97658-9935"}]}
+{"id": "nota_050", "entidades": []}
+{"id": "nota_051", "entidades": [{"tipo": "ZIP_CODE", "inicio": 303, "fim": 313, "texto": "99031-6086"}]}
+{"id": "nota_052", "entidades": [{"tipo": "ZIP_CODE", "inicio": 121, "fim": 131, "texto": "94605-4740"}, {"tipo": "EMAIL", "inicio": 153, "fim": 183, "texto": "sofia.moreira.rosa@exemplo.org"}]}
+{"id": "nota_053", "entidades": []}
+{"id": "nota_054", "entidades": []}
+{"id": "nota_055", "entidades": [{"tipo": "ZIP_CODE", "inicio": 260, "fim": 270, "texto": "93511-5530"}]}
+{"id": "nota_056", "entidades": []}
+{"id": "nota_057", "entidades": [{"tipo": "EMAIL", "inicio": 276, "fim": 309, "texto": "bruno.ribeiro.cardoso@exemplo.org"}]}
+{"id": "nota_058", "entidades": []}
+{"id": "nota_059", "entidades": []}
+{"id": "nota_060", "entidades": []}
+{"id": "nota_061", "entidades": [{"tipo": "EMAIL", "inicio": 166, "fim": 203, "texto": "pedro.henrique.machado@exemplo.com.br"}]}
+{"id": "nota_062", "entidades": [{"tipo": "EMAIL", "inicio": 175, "fim": 212, "texto": "pedro.henrique.almeida@exemplo.com.br"}]}
+{"id": "nota_063", "entidades": []}
+{"id": "nota_064", "entidades": [{"tipo": "PHONE", "inicio": 25, "fim": 36, "texto": "16244871731"}]}
+{"id": "nota_065", "entidades": []}
+{"id": "nota_066", "entidades": [{"tipo": "DATE", "inicio": 166, "fim": 174, "texto": "05/01/25"}]}
+{"id": "nota_067", "entidades": []}
+{"id": "nota_068", "entidades": [{"tipo": "ZIP_CODE", "inicio": 208, "fim": 218, "texto": "94116-3717"}]}
+{"id": "nota_069", "entidades": []}
+{"id": "nota_070", "entidades": [{"tipo": "PHONE", "inicio": 39, "fim": 50, "texto": "14225152146"}]}
+{"id": "nota_071", "entidades": []}
+{"id": "nota_072", "entidades": []}
+{"id": "nota_073", "entidades": []}
+{"id": "nota_074", "entidades": [{"tipo": "DATE", "inicio": 133, "fim": 143, "texto": "05/01/2026"}]}
+{"id": "nota_075", "entidades": [{"tipo": "ZIP_CODE", "inicio": 187, "fim": 197, "texto": "96867-1171"}]}
+{"id": "nota_076", "entidades": []}
+{"id": "nota_077", "entidades": []}
+{"id": "nota_078", "entidades": [{"tipo": "EMAIL", "inicio": 231, "fim": 258, "texto": "igor.almeida@exemplo.com.br"}]}
+{"id": "nota_079", "entidades": []}
+{"id": "nota_080", "entidades": [{"tipo": "EMAIL", "inicio": 313, "fim": 349, "texto": "maria.eduarda.moreira@exemplo.com.br"}]}
+{"id": "nota_081", "entidades": []}
+{"id": "nota_082", "entidades": [{"tipo": "ZIP_CODE", "inicio": 114, "fim": 124, "texto": "95182-2118"}]}
+{"id": "nota_083", "entidades": [{"tipo": "ZIP_CODE", "inicio": 127, "fim": 137, "texto": "97370-6168"}, {"tipo": "DATE", "inicio": 214, "fim": 222, "texto": "05/01/25"}]}
+{"id": "nota_084", "entidades": []}
+{"id": "nota_085", "entidades": []}
+{"id": "nota_086", "entidades": []}
+{"id": "nota_087", "entidades": [{"tipo": "DATE", "inicio": 167, "fim": 175, "texto": "10/07/26"}]}
+{"id": "nota_088", "entidades": []}
+{"id": "nota_089", "entidades": [{"tipo": "ZIP_CODE", "inicio": 115, "fim": 125, "texto": "96132-8960"}]}
+{"id": "nota_090", "entidades": [{"tipo": "ZIP_CODE", "inicio": 226, "fim": 236, "texto": "96202-7259"}]}
+{"id": "nota_091", "entidades": []}
+{"id": "nota_092", "entidades": []}
+{"id": "nota_093", "entidades": []}
+{"id": "nota_094", "entidades": []}
+{"id": "nota_095", "entidades": []}
+{"id": "nota_096", "entidades": []}
+{"id": "nota_097", "entidades": [{"tipo": "EMAIL", "inicio": 169, "fim": 192, "texto": "ana.machado@exemplo.org"}]}
+{"id": "nota_098", "entidades": []}
+{"id": "nota_099", "entidades": [{"tipo": "DATE", "inicio": 312, "fim": 322, "texto": "12/01/2026"}]}
+{"id": "nota_100", "entidades": []}
+{"id": "nota_101", "entidades": [{"tipo": "EMAIL", "inicio": 155, "fim": 188, "texto": "julia.ribeiro.pereira@exemplo.org"}]}
+{"id": "nota_102", "entidades": []}
+{"id": "nota_103", "entidades": [{"tipo": "ZIP_CODE", "inicio": 216, "fim": 226, "texto": "98494-4458"}]}
+{"id": "nota_104", "entidades": []}
+{"id": "nota_105", "entidades": [{"tipo": "ZIP_CODE", "inicio": 136, "fim": 146, "texto": "92749-7288"}, {"tipo": "EMAIL", "inicio": 233, "fim": 270, "texto": "pedro.henrique.machado@exemplo.com.br"}]}
+{"id": "nota_106", "entidades": []}
+{"id": "nota_107", "entidades": []}
+{"id": "nota_108", "entidades": []}
+{"id": "nota_109", "entidades": []}
+{"id": "nota_110", "entidades": [{"tipo": "ZIP_CODE", "inicio": 245, "fim": 255, "texto": "91389-9495"}]}
+{"id": "nota_111", "entidades": [{"tipo": "DATE", "inicio": 258, "fim": 266, "texto": "03/10/26"}]}
+{"id": "nota_112", "entidades": []}
+{"id": "nota_113", "entidades": []}
+{"id": "nota_114", "entidades": []}
+{"id": "nota_115", "entidades": []}
+{"id": "nota_116", "entidades": []}
+{"id": "nota_117", "entidades": []}
+{"id": "nota_118", "entidades": []}
+{"id": "nota_119", "entidades": []}
+{"id": "nota_120", "entidades": []}
+{"id": "nota_121", "entidades": []}
+{"id": "nota_122", "entidades": []}
+{"id": "nota_123", "entidades": [{"tipo": "ZIP_CODE", "inicio": 220, "fim": 230, "texto": "95632-6146"}]}
+{"id": "nota_124", "entidades": [{"tipo": "ZIP_CODE", "inicio": 176, "fim": 186, "texto": "91304-2249"}]}
+{"id": "nota_125", "entidades": []}
+{"id": "nota_126", "entidades": []}
+{"id": "nota_127", "entidades": [{"tipo": "ZIP_CODE", "inicio": 181, "fim": 191, "texto": "93351-7053"}]}
+{"id": "nota_128", "entidades": []}
+{"id": "nota_129", "entidades": []}
+{"id": "nota_130", "entidades": [{"tipo": "ZIP_CODE", "inicio": 164, "fim": 174, "texto": "94338-4412"}]}
+{"id": "nota_131", "entidades": []}
+{"id": "nota_132", "entidades": [{"tipo": "PHONE", "inicio": 178, "fim": 189, "texto": "16644726603"}]}
+{"id": "nota_133", "entidades": []}
+{"id": "nota_134", "entidades": [{"tipo": "ZIP_CODE", "inicio": 134, "fim": 144, "texto": "94150-1442"}]}
+{"id": "nota_135", "entidades": [{"tipo": "PHONE", "inicio": 43, "fim": 54, "texto": "17065644901"}]}
+{"id": "nota_136", "entidades": [{"tipo": "DATE", "inicio": 161, "fim": 169, "texto": "11/08/26"}]}
+{"id": "nota_137", "entidades": []}
+{"id": "nota_138", "entidades": []}
+{"id": "nota_139", "entidades": [{"tipo": "PHONE", "inicio": 122, "fim": 133, "texto": "13869413441"}, {"tipo": "ZIP_CODE", "inicio": 259, "fim": 269, "texto": "92517-7786"}]}
+{"id": "nota_140", "entidades": [{"tipo": "ZIP_CODE", "inicio": 213, "fim": 223, "texto": "94918-6844"}]}
+{"id": "nota_141", "entidades": []}
+{"id": "nota_142", "entidades": []}
+{"id": "nota_143", "entidades": []}
+{"id": "nota_144", "entidades": [{"tipo": "PHONE", "inicio": 41, "fim": 52, "texto": "10631973257"}, {"tipo": "ZIP_CODE", "inicio": 212, "fim": 222, "texto": "96568-5405"}]}
+{"id": "nota_145", "entidades": [{"tipo": "ZIP_CODE", "inicio": 101, "fim": 111, "texto": "96001-4221"}, {"tipo": "EMAIL", "inicio": 190, "fim": 226, "texto": "sofia.moreira.machado@exemplo.com.br"}]}
+{"id": "nota_146", "entidades": []}
+{"id": "nota_147", "entidades": []}
+{"id": "nota_148", "entidades": [{"tipo": "DATE", "inicio": 251, "fim": 259, "texto": "01/01/26"}]}
+{"id": "nota_149", "entidades": []}
+{"id": "nota_150", "entidades": [{"tipo": "DATE", "inicio": 290, "fim": 300, "texto": "01/10/2026"}]}
+{"id": "nota_151", "entidades": []}
+{"id": "nota_152", "entidades": []}
+{"id": "nota_153", "entidades": []}
+{"id": "nota_154", "entidades": []}
+{"id": "nota_155", "entidades": []}
+{"id": "nota_156", "entidades": [{"tipo": "PHONE", "inicio": 129, "fim": 140, "texto": "12743544120"}]}
+{"id": "nota_157", "entidades": []}
+{"id": "nota_158", "entidades": []}
+{"id": "nota_159", "entidades": []}
+{"id": "nota_160", "entidades": []}
+{"id": "nota_161", "entidades": [{"tipo": "ZIP_CODE", "inicio": 192, "fim": 202, "texto": "97176-4545"}]}
+{"id": "nota_162", "entidades": []}
+{"id": "nota_163", "entidades": [{"tipo": "ZIP_CODE", "inicio": 207, "fim": 217, "texto": "96163-4448"}]}
+{"id": "nota_164", "entidades": [{"tipo": "PHONE", "inicio": 41, "fim": 52, "texto": "18959955825"}, {"tipo": "EMAIL", "inicio": 204, "fim": 235, "texto": "ana.beatriz.pereira@exemplo.org"}]}
+{"id": "nota_165", "entidades": [{"tipo": "ZIP_CODE", "inicio": 205, "fim": 215, "texto": "99880-8367"}]}
+{"id": "nota_166", "entidades": [{"tipo": "ZIP_CODE", "inicio": 165, "fim": 175, "texto": "91028-7114"}]}
+{"id": "nota_167", "entidades": []}
+{"id": "nota_168", "entidades": []}
+{"id": "nota_169", "entidades": []}
+{"id": "nota_170", "entidades": [{"tipo": "ZIP_CODE", "inicio": 132, "fim": 142, "texto": "95645-8823"}, {"tipo": "EMAIL", "inicio": 351, "fim": 393, "texto": "maria.clara.barbosa.pereira@exemplo.com.br"}]}
+{"id": "nota_171", "entidades": []}
+{"id": "nota_172", "entidades": [{"tipo": "DATE", "inicio": 233, "fim": 241, "texto": "09/05/25"}]}
+{"id": "nota_173", "entidades": [{"tipo": "ZIP_CODE", "inicio": 230, "fim": 240, "texto": "95258-4859"}]}
+{"id": "nota_174", "entidades": [{"tipo": "DATE", "inicio": 183, "fim": 193, "texto": "06/10/2025"}]}
+{"id": "nota_175", "entidades": [{"tipo": "ZIP_CODE", "inicio": 224, "fim": 234, "texto": "92781-2615"}]}
+{"id": "nota_176", "entidades": []}
+{"id": "nota_177", "entidades": []}
+{"id": "nota_178", "entidades": []}
+{"id": "nota_179", "entidades": []}
+{"id": "nota_180", "entidades": [{"tipo": "EMAIL", "inicio": 261, "fim": 298, "texto": "leandro.ferreira.nogueira@exemplo.org"}]}
+{"id": "nota_181", "entidades": []}
+{"id": "nota_182", "entidades": []}
+{"id": "nota_183", "entidades": [{"tipo": "PHONE", "inicio": 146, "fim": 157, "texto": "13061626212"}, {"tipo": "ZIP_CODE", "inicio": 193, "fim": 203, "texto": "96079-6220"}]}
+{"id": "nota_184", "entidades": [{"tipo": "EMAIL", "inicio": 175, "fim": 203, "texto": "fabio.moreira@exemplo.com.br"}]}
+{"id": "nota_185", "entidades": []}
+{"id": "nota_186", "entidades": [{"tipo": "ZIP_CODE", "inicio": 172, "fim": 182, "texto": "99689-4694"}]}
+{"id": "nota_187", "entidades": [{"tipo": "DATE", "inicio": 275, "fim": 283, "texto": "03/05/25"}]}
+{"id": "nota_188", "entidades": []}
+{"id": "nota_189", "entidades": [{"tipo": "ZIP_CODE", "inicio": 266, "fim": 276, "texto": "96588-1561"}]}
+{"id": "nota_190", "entidades": []}
+{"id": "nota_191", "entidades": []}
+{"id": "nota_192", "entidades": [{"tipo": "ZIP_CODE", "inicio": 113, "fim": 123, "texto": "98370-9907"}, {"tipo": "EMAIL", "inicio": 244, "fim": 278, "texto": "helena.barbosa.almeida@exemplo.org"}]}
+{"id": "nota_193", "entidades": []}
+{"id": "nota_194", "entidades": []}
+{"id": "nota_195", "entidades": [{"tipo": "PHONE", "inicio": 44, "fim": 55, "texto": "17720630610"}, {"tipo": "EMAIL", "inicio": 168, "fim": 200, "texto": "jose.carlos.nogueira@exemplo.org"}]}
+{"id": "nota_196", "entidades": [{"tipo": "EMAIL", "inicio": 298, "fim": 340, "texto": "pedro.henrique.ribeiro.cardoso@exemplo.org"}]}
+{"id": "nota_197", "entidades": []}
+{"id": "nota_198", "entidades": []}
+{"id": "nota_199", "entidades": []}
+{"id": "nota_200", "entidades": []}
