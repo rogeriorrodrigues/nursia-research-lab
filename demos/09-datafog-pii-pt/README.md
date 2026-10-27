@@ -14,7 +14,7 @@ python3 demo.py                 # grava results/
 python3 -m pytest tests -q
 ```
 
-CPU, sem rede depois do `pip install`, sem modelo, sem chave. Roda em menos de 1 s. `demo.py` desliga a telemetria do DataFog (`DATAFOG_NO_TELEMETRY=1`, `DO_NOT_TRACK=1`) antes de importar a biblioteca.
+CPU, sem modelo, sem chave. `demo.py` desliga a telemetria do DataFog (`DATAFOG_NO_TELEMETRY=1`, `DO_NOT_TRACK=1`) antes de importar a biblioteca.
 
 ## O que mostra
 
@@ -43,7 +43,7 @@ Há também **Parcial**: a entidade encosta no span, mas sobra parte dele (ex.: 
 - Entidades achadas pelo DataFog nas 200 notas: ZIP_CODE 43, EMAIL 26, DATE 17, PHONE 10.
 - Telefones no formato `99123-4567` viraram `ZIP_CODE`; com DDD, o DDD fica de fora (27 parciais).
 - Falsos positivos em números que não são dado pessoal (lote, leito, dose, pressão, protocolo): 2, ambos em protocolo.
-- Tempo médio: 0,21 ms por nota nesta máquina (CPU, Python 3.11, uma execução; o valor muda a cada rodada, o resto é determinístico).
+- Tempo médio: cerca de 0,2 ms por nota nesta máquina (CPU, Python 3.11; 0,15 a 0,21 ms em quatro rodadas; o tempo muda a cada rodada, o resto é determinístico).
 
 Para comparar, a demo 06 mediu o Presidio 2.2.364 padrão deixando CPF ou CNS passar em 200 das 200 notas, e o Presidio + presidio-br em 0 de 200.
 

@@ -1,4 +1,4 @@
-DataFog 4.9.0, engine regex, 7 tipos do corpus, tempo médio 0.21 ms por nota
+DataFog 4.9.0, engine regex, 7 tipos do corpus, tempo médio 0.19 ms por nota
 
 | Tipo | Suporte | Exato | Coberto | Parcial | Vazou após redact |
 |---|---|---|---|---|---|
