@@ -1,0 +1,55 @@
+{
+  "healthchain": "0.16.1",
+  "recursos": 240,
+  "tempo_medio_s": 0.000164,
+  "por_categoria": {
+    "valido": {
+      "total": 60,
+      "reprovados": 0
+    },
+    "obrigatorio_ausente": {
+      "total": 20,
+      "reprovados": 20
+    },
+    "data_formato_br": {
+      "total": 20,
+      "reprovados": 20
+    },
+    "campo_desconhecido": {
+      "total": 20,
+      "reprovados": 20
+    },
+    "codigo_fora_do_conjunto": {
+      "total": 20,
+      "reprovados": 20
+    },
+    "loinc_inventado": {
+      "total": 20,
+      "reprovados": 0
+    },
+    "unidade_ucum_invalida": {
+      "total": 20,
+      "reprovados": 0
+    },
+    "referencia_quebrada": {
+      "total": 20,
+      "reprovados": 0
+    },
+    "cpf_digito_invalido": {
+      "total": 20,
+      "reprovados": 0
+    },
+    "invariante_obs6": {
+      "total": 20,
+      "reprovados": 0
+    }
+  },
+  "defeitos_total": 180,
+  "defeitos_reprovados": 80,
+  "estruturais_total": 80,
+  "estruturais_reprovados": 80,
+  "semanticos_total": 100,
+  "semanticos_reprovados": 0,
+  "validos_total": 60,
+  "validos_reprovados": 0
+}

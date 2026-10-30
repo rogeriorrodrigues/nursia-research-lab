@@ -1,0 +1,240 @@
+{"id": "valido-000", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-001", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-002", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-003", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-004", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-005", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-006", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-007", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-008", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-009", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-010", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-011", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-012", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-013", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-014", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-015", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-016", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-017", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-018", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-019", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-020", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-021", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-022", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-023", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-024", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-025", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-026", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-027", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-028", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-029", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-030", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-031", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-032", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-033", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-034", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-035", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-036", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-037", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-038", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-039", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-040", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-041", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-042", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-043", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-044", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-045", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-046", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-047", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-048", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-049", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-050", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-051", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-052", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-053", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-054", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-055", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-056", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-057", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-058", "categoria": "valido", "valid": true, "issues": []}
+{"id": "valido-059", "categoria": "valido", "valid": true, "issues": []}
+{"id": "obrigatorio_ausente-000", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "value", "expression": "Observation.status"}]}
+{"id": "obrigatorio_ausente-001", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "required", "expression": "Observation.code"}]}
+{"id": "obrigatorio_ausente-002", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "required", "expression": "Condition.subject"}]}
+{"id": "obrigatorio_ausente-003", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "value", "expression": "Observation.status"}]}
+{"id": "obrigatorio_ausente-004", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "required", "expression": "Observation.code"}]}
+{"id": "obrigatorio_ausente-005", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "required", "expression": "Condition.subject"}]}
+{"id": "obrigatorio_ausente-006", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "value", "expression": "Observation.status"}]}
+{"id": "obrigatorio_ausente-007", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "required", "expression": "Observation.code"}]}
+{"id": "obrigatorio_ausente-008", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "required", "expression": "Condition.subject"}]}
+{"id": "obrigatorio_ausente-009", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "value", "expression": "Observation.status"}]}
+{"id": "obrigatorio_ausente-010", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "required", "expression": "Observation.code"}]}
+{"id": "obrigatorio_ausente-011", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "required", "expression": "Condition.subject"}]}
+{"id": "obrigatorio_ausente-012", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "value", "expression": "Observation.status"}]}
+{"id": "obrigatorio_ausente-013", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "required", "expression": "Observation.code"}]}
+{"id": "obrigatorio_ausente-014", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "required", "expression": "Condition.subject"}]}
+{"id": "obrigatorio_ausente-015", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "value", "expression": "Observation.status"}]}
+{"id": "obrigatorio_ausente-016", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "required", "expression": "Observation.code"}]}
+{"id": "obrigatorio_ausente-017", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "required", "expression": "Condition.subject"}]}
+{"id": "obrigatorio_ausente-018", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "value", "expression": "Observation.status"}]}
+{"id": "obrigatorio_ausente-019", "categoria": "obrigatorio_ausente", "valid": false, "issues": [{"code": "required", "expression": "Observation.code"}]}
+{"id": "data_formato_br-000", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Observation.effectiveDateTime"}]}
+{"id": "data_formato_br-001", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Patient.birthDate"}]}
+{"id": "data_formato_br-002", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Observation.effectiveDateTime"}]}
+{"id": "data_formato_br-003", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Patient.birthDate"}]}
+{"id": "data_formato_br-004", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Observation.effectiveDateTime"}]}
+{"id": "data_formato_br-005", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Patient.birthDate"}]}
+{"id": "data_formato_br-006", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Observation.effectiveDateTime"}]}
+{"id": "data_formato_br-007", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Patient.birthDate"}]}
+{"id": "data_formato_br-008", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Observation.effectiveDateTime"}]}
+{"id": "data_formato_br-009", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Patient.birthDate"}]}
+{"id": "data_formato_br-010", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Observation.effectiveDateTime"}]}
+{"id": "data_formato_br-011", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Patient.birthDate"}]}
+{"id": "data_formato_br-012", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Observation.effectiveDateTime"}]}
+{"id": "data_formato_br-013", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Patient.birthDate"}]}
+{"id": "data_formato_br-014", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Observation.effectiveDateTime"}]}
+{"id": "data_formato_br-015", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Patient.birthDate"}]}
+{"id": "data_formato_br-016", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Observation.effectiveDateTime"}]}
+{"id": "data_formato_br-017", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Patient.birthDate"}]}
+{"id": "data_formato_br-018", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Observation.effectiveDateTime"}]}
+{"id": "data_formato_br-019", "categoria": "data_formato_br", "valid": false, "issues": [{"code": "value", "expression": "Patient.birthDate"}]}
+{"id": "campo_desconhecido-000", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Observation.paciente"}]}
+{"id": "campo_desconhecido-001", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Patient.cpf"}]}
+{"id": "campo_desconhecido-002", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Observation.paciente"}]}
+{"id": "campo_desconhecido-003", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Patient.cpf"}]}
+{"id": "campo_desconhecido-004", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Observation.paciente"}]}
+{"id": "campo_desconhecido-005", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Patient.cpf"}]}
+{"id": "campo_desconhecido-006", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Observation.paciente"}]}
+{"id": "campo_desconhecido-007", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Patient.cpf"}]}
+{"id": "campo_desconhecido-008", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Observation.paciente"}]}
+{"id": "campo_desconhecido-009", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Patient.cpf"}]}
+{"id": "campo_desconhecido-010", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Observation.paciente"}]}
+{"id": "campo_desconhecido-011", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Patient.cpf"}]}
+{"id": "campo_desconhecido-012", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Observation.paciente"}]}
+{"id": "campo_desconhecido-013", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Patient.cpf"}]}
+{"id": "campo_desconhecido-014", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Observation.paciente"}]}
+{"id": "campo_desconhecido-015", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Patient.cpf"}]}
+{"id": "campo_desconhecido-016", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Observation.paciente"}]}
+{"id": "campo_desconhecido-017", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Patient.cpf"}]}
+{"id": "campo_desconhecido-018", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Observation.paciente"}]}
+{"id": "campo_desconhecido-019", "categoria": "campo_desconhecido", "valid": false, "issues": [{"code": "structure", "expression": "Patient.cpf"}]}
+{"id": "codigo_fora_do_conjunto-000", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Observation.status"}]}
+{"id": "codigo_fora_do_conjunto-001", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Patient.gender"}]}
+{"id": "codigo_fora_do_conjunto-002", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Observation.status"}]}
+{"id": "codigo_fora_do_conjunto-003", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Patient.gender"}]}
+{"id": "codigo_fora_do_conjunto-004", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "value", "expression": "Observation.status"}]}
+{"id": "codigo_fora_do_conjunto-005", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Patient.gender"}]}
+{"id": "codigo_fora_do_conjunto-006", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "value", "expression": "Observation.status"}]}
+{"id": "codigo_fora_do_conjunto-007", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Patient.gender"}]}
+{"id": "codigo_fora_do_conjunto-008", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Observation.status"}]}
+{"id": "codigo_fora_do_conjunto-009", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Patient.gender"}]}
+{"id": "codigo_fora_do_conjunto-010", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Observation.status"}]}
+{"id": "codigo_fora_do_conjunto-011", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Patient.gender"}]}
+{"id": "codigo_fora_do_conjunto-012", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Observation.status"}]}
+{"id": "codigo_fora_do_conjunto-013", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Patient.gender"}]}
+{"id": "codigo_fora_do_conjunto-014", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Observation.status"}]}
+{"id": "codigo_fora_do_conjunto-015", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Patient.gender"}]}
+{"id": "codigo_fora_do_conjunto-016", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Observation.status"}]}
+{"id": "codigo_fora_do_conjunto-017", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Patient.gender"}]}
+{"id": "codigo_fora_do_conjunto-018", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "value", "expression": "Observation.status"}]}
+{"id": "codigo_fora_do_conjunto-019", "categoria": "codigo_fora_do_conjunto", "valid": false, "issues": [{"code": "code-invalid", "expression": "Patient.gender"}]}
+{"id": "loinc_inventado-000", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-001", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-002", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-003", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-004", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-005", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-006", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-007", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-008", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-009", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-010", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-011", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-012", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-013", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-014", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-015", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-016", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-017", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-018", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "loinc_inventado-019", "categoria": "loinc_inventado", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-000", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-001", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-002", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-003", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-004", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-005", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-006", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-007", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-008", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-009", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-010", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-011", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-012", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-013", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-014", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-015", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-016", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-017", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-018", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "unidade_ucum_invalida-019", "categoria": "unidade_ucum_invalida", "valid": true, "issues": []}
+{"id": "referencia_quebrada-000", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-001", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-002", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-003", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-004", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-005", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-006", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-007", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-008", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-009", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-010", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-011", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-012", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-013", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-014", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-015", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-016", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-017", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-018", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "referencia_quebrada-019", "categoria": "referencia_quebrada", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-000", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-001", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-002", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-003", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-004", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-005", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-006", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-007", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-008", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-009", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-010", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-011", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-012", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-013", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-014", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-015", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-016", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-017", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-018", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "cpf_digito_invalido-019", "categoria": "cpf_digito_invalido", "valid": true, "issues": []}
+{"id": "invariante_obs6-000", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-001", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-002", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-003", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-004", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-005", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-006", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-007", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-008", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-009", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-010", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-011", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-012", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-013", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-014", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-015", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-016", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-017", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-018", "categoria": "invariante_obs6", "valid": true, "issues": []}
+{"id": "invariante_obs6-019", "categoria": "invariante_obs6", "valid": true, "issues": []}

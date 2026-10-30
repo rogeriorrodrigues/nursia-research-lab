@@ -40,6 +40,7 @@
 | [08-hl7gen-hl7v2-fhir](demos/08-hl7gen-hl7v2-fhir/) | hl7gen 0.2.0 on synthetic HL7 v2: 185 message types pass the validator, 8 convert to FHIR, and a CPF/CNS in PID-3 never reaches the Patient · HL7 v2 sintético vira FHIR, e o conversor descarta o CPF |
 | [09-datafog-pii-pt](demos/09-datafog-pii-pt/) | DataFog 4.9.0 (regex engine) on the same 200 synthetic Portuguese notes: 26/26 emails covered, 8/133 CPFs (all mislabeled as phone) and 0/120 CNS, so 196 of 200 notes still hold a full CPF or CNS after `redact()` · O que a camada regex do DataFog pega em nota clínica em português |
 | [10-pyomop-fhir-omop](demos/10-pyomop-fhir-omop/) | pyomop 6.4.0 loads 60 synthetic FHIR patients into OMOP CDM 5.4: source values arrive intact and no CPF/CNS/name reaches any table, but every clinical `concept_id` is 0 without an Athena vocabulary and 0 of 390 clinical rows link to their visit · FHIR sintético vira OMOP, e o `concept_id` fica em zero |
+| [11-healthchain-validacao-fhir](demos/11-healthchain-validacao-fhir/) | HealthChain 0.16.1 `validate_resource()` on 240 synthetic FHIR resources: it rejects 80 of 80 structural defects and 0 of 100 content defects (invented LOINC code, non-UCUM unit, broken reference, CPF with a bad check digit), with 0 false positives · O que o validador do HealthChain pega em FHIR, e o que deixa passar |
 
 Each demo has its own multilingual README inside `demos/<demo>/docs/`.
 
