@@ -1,0 +1,3 @@
+codigo_fora_do_conjunto-001: gender = 'feminino'
+Patient.gender (code-invalid)
+Value 'feminino' is not in the required value set. Allowed values: male, female, other, unknown

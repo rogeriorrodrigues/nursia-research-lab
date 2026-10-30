@@ -1,7 +1,7 @@
 {
   "healthchain": "0.16.1",
   "recursos": 240,
-  "tempo_medio_s": 0.000164,
+  "tempo_medio_s": 0.000172,
   "por_categoria": {
     "valido": {
       "total": 60,

@@ -41,16 +41,17 @@ CPU, sem rede depois do `pip install`, sem chave, sem modelo.
 | (controle) recurso válido | - | 0/60 |
 
 - Forma: 80 de 80 reprovados. Conteúdo: 0 de 100. Total: 80 de 180.
-- Tempo médio: cerca de 0,2 ms por recurso nesta máquina (CPU, Python 3.11; 0,19 a 0,25 ms nas rodadas que fiz; o tempo muda a cada rodada, o resto é determinístico).
-- `results/raw.jsonl` guarda, por recurso, se foi reprovado e quais problemas o validador apontou; `results/metricas.json` tem os números crus.
+- Tempo médio: cerca de 0,2 ms por recurso (CPU, Python 3.11). A rodada gravada em `results/` deu 0,17 ms; entre rodadas e máquinas vi de 0,11 a 0,25 ms. O tempo muda a cada rodada, o resto é determinístico.
+- `results/raw.jsonl` guarda, por recurso, se foi reprovado e onde (`expression` e `code`); `results/exemplo.txt` guarda a mensagem completa de um caso (`gender` = "feminino"); `results/metricas.json` tem os números crus.
+- **Forma** = o que o modelo Pydantic do `fhir.resources` ou o binding de `code` primitivo recusa; **conteúdo** = o resto. Como o rótulo segue o que o módulo diz checar, o 80/80 e o 0/100 confirmam o docstring, não descobrem nada novo.
 
 ## Limites honestos
 
-- **Isso confirma o que a documentação do módulo já diz.** O docstring de `healthchain/fhir/validation.py` lista o que não é checado: bindings de `CodeableConcept`/`Coding`, invariantes FHIRPath, conformidade com perfil e integridade de referência. A demo mede esse recorte; não é um defeito escondido. Pra validação completa, o próprio módulo manda usar o `$validate` de um servidor FHIR.
+- **Isso confirma o que a documentação do módulo já diz.** O docstring de `healthchain/fhir/validation.py` lista o que não é checado: bindings de `CodeableConcept`/`Coding`, invariantes FHIRPath, conformidade com perfil e integridade de referência. Três das cinco categorias de conteúdo caem nesses itens (LOINC inventado, referência quebrada, `obs-6`). CPF com dígito errado e unidade fora do UCUM não estão listados: são extensão minha. Pra validação completa, o próprio módulo manda usar o `$validate` de um servidor FHIR.
 - **O gabarito é meu.** Escolhi as 9 categorias e fiz o defeito de cada uma. Outras categorias dariam outra proporção. O 80/180 descreve este conjunto, não a taxa de erro de FHIR real.
 - **Não comparei com o validador oficial da HL7.** A demo não roda o validador Java; só diz o que o `validate_resource()` deixa passar.
 - **Perfil brasileiro não entra.** Usei o sistema de identificador de CPF do Ministério da Saúde só pra montar o dado; a demo não valida contra perfil BR.
-- Só `validate_resource()` em recurso solto ou Bundle montado à mão. Não testei `load_bundle()` nem as demais partes do SDK (gateway, MCP, sandbox).
+- Os 20 casos de referência quebrada são Bundles (Patient + Observation) montados à mão; o resto são recursos soltos. Só `validate_resource()`. Não testei `load_bundle()` nem as demais partes do SDK (gateway, MCP, sandbox).
 - Todo dado é sintético: CPF passa no dígito verificador mas é sorteado com semente fixa e não pertence a ninguém. Nomes saem de lista curta inventada.
 
 ## Fonte

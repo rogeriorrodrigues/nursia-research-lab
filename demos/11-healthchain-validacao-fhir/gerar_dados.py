@@ -19,7 +19,8 @@ CPF_SYSTEM = "http://www.saude.gov.br/fhir/r4/NamingSystem/cpf"
 NOMES = ["Ana", "Bruno", "Carla", "Diego", "Elisa", "Fábio", "Gabi", "Hugo", "Inês", "João"]
 SOBRENOMES = ["Silva", "Souza", "Lima", "Pereira", "Costa", "Ribeiro", "Alves", "Nunes"]
 
-# categoria -> (descrição, estrutural?)  estrutural = a especificação FHIR em si recusa na forma
+# categoria -> (descrição, forma?)  forma = o que o modelo Pydantic ou o binding de code primitivo recusa;
+# conteúdo = o resto. O rótulo segue o que o docstring do healthchain diz checar, então 80/80 e 0/100 confirmam o docstring.
 CATEGORIAS = {
     "obrigatorio_ausente": ("campo obrigatório ausente", True),
     "data_formato_br": ("data no formato dd/mm/aaaa", True),

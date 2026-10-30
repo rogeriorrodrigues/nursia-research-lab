@@ -1,2 +1,3 @@
 healthchain==0.16.1
+fhir.resources==8.1.0
 pytest==9.1.1

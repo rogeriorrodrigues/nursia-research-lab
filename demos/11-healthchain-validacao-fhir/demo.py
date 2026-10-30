@@ -69,14 +69,14 @@ def tabela(m: dict, tempo_medio: float, ver: str) -> str:
     ]
     for cat, (desc, estrutural) in gerar_dados.CATEGORIAS.items():
         c = m["por_categoria"][cat]
-        natureza = "estrutural" if estrutural else "semântico"
+        natureza = "forma" if estrutural else "conteúdo"
         linhas.append(f"| {desc} | {natureza} | {c['reprovados']}/{c['total']} |")
     v = m["por_categoria"]["valido"]
     linhas += [
         f"| (controle) recurso válido | - | {v['reprovados']}/{v['total']} |",
         "",
-        f"Defeitos estruturais reprovados: {m['estruturais_reprovados']}/{m['estruturais_total']}",
-        f"Defeitos semânticos reprovados: {m['semanticos_reprovados']}/{m['semanticos_total']}",
+        f"Defeitos de forma reprovados: {m['estruturais_reprovados']}/{m['estruturais_total']}",
+        f"Defeitos de conteúdo reprovados: {m['semanticos_reprovados']}/{m['semanticos_total']}",
         f"Defeitos reprovados no total: {m['defeitos_reprovados']}/{m['defeitos_total']}",
     ]
     return "\n".join(linhas) + "\n"
@@ -99,6 +99,11 @@ def main() -> None:
         for r in resultados:
             r = {k: v for k, v in r.items() if k != "segundos"}
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    ex = next(i for i in itens if i["id"] == "codigo_fora_do_conjunto-001")
+    rel = validate_resource(ex["recurso"])
+    (res / "exemplo.txt").write_text(
+        f"{ex['id']}: gender = {ex['recurso']['gender']!r}\n"
+        + "\n".join(f"{i.expression} ({i.code})\n{i.diagnostics}" for i in rel.issues) + "\n", encoding="utf-8")
     texto = tabela(m, tempo_medio, ver)
     (res / "tabela.md").write_text(texto, encoding="utf-8")
     print(texto)
