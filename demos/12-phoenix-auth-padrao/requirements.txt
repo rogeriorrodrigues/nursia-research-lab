@@ -1,0 +1,4 @@
+arize-phoenix==21.0.0
+opentelemetry-proto==1.45.2
+protobuf==7.36.2
+pytest==8.4.2
