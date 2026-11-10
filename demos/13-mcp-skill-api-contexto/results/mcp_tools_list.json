@@ -1,0 +1,120 @@
+{
+  "_meta": {
+    "io.modelcontextprotocol/serverInfo": {
+      "name": "identificadores",
+      "version": ""
+    }
+  },
+  "ttlMs": 0,
+  "cacheScope": "private",
+  "tools": [
+    {
+      "name": "validar_cpf",
+      "description": "Confere os dois dígitos verificadores de um CPF (11 dígitos, com ou sem pontuação).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "cpf": {
+            "title": "Cpf",
+            "type": "string"
+          }
+        },
+        "required": [
+          "cpf"
+        ],
+        "title": "validar_cpfArguments"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "title": "Result",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "validar_cpfOutput",
+        "type": "object"
+      }
+    },
+    {
+      "name": "validar_cns",
+      "description": "Confere o Cartão Nacional de Saúde (15 dígitos) pela soma ponderada módulo 11.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "cns": {
+            "title": "Cns",
+            "type": "string"
+          }
+        },
+        "required": [
+          "cns"
+        ],
+        "title": "validar_cnsArguments"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "title": "Result",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "validar_cnsOutput",
+        "type": "object"
+      }
+    },
+    {
+      "name": "mascarar_identificadores",
+      "description": "Troca CPF e CNS válidos do texto por [CPF] e [CNS]. Número inválido fica como está.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "texto": {
+            "title": "Texto",
+            "type": "string"
+          }
+        },
+        "required": [
+          "texto"
+        ],
+        "title": "mascarar_identificadoresArguments"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "title": "Result",
+            "type": "string"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "mascarar_identificadoresOutput",
+        "type": "object"
+      }
+    },
+    {
+      "name": "contar_identificadores",
+      "description": "Conta quantos CPF e CNS válidos e inválidos aparecem no texto, sem devolver os números.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "texto": {
+            "title": "Texto",
+            "type": "string"
+          }
+        },
+        "required": [
+          "texto"
+        ],
+        "title": "contar_identificadoresArguments"
+      }
+    }
+  ],
+  "resultType": "complete"
+}

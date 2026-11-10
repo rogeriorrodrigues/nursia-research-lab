@@ -1,0 +1,25 @@
+mcp 2.3.0 · tiktoken 0.14.0 · Python 3.11.18
+4 ferramentas: validar_cpf, validar_cns, mascarar_identificadores, contar_identificadores
+saída igual nas 3 vias: Paciente FULANO DE TAL SINTETICO, CPF [CPF], CNS [CNS]. Retorno em 7 dias. CPF do acompanhante 111.222.333-00 (digitado errado).
+
+o que entra no contexto                       o200k  cl100k
+mcp_tools_list_resposta_inteira                 417     417
+mcp_definicoes_pro_modelo                       275     283
+api_definicoes_pro_modelo                       223     231
+skill_nivel1_metadado                            60      66
+skill_nivel2_corpo                              312     337
+skill_script_codigo_nao_entra                   103     109
+chamada_mcp_ou_api_argumentos                    61      65
+chamada_mcp_ou_api_resultado                     43      47
+chamada_skill_comando                            17      18
+chamada_skill_saida                              44      47
+
+projeção, 10 pedidos (o200k_base):
+  mcp_10_pedidos                             2750
+  api_10_pedidos                             2230
+  skill_10_pedidos_usada_no_pedido_1         3720
+  skill_10_pedidos_usada_no_pedido_10         912
+  skill_10_pedidos_nunca_usada                600
+
+definição MCP idêntica à escrita à mão pra API: False
+idêntica depois de tirar os campos title do Pydantic: True

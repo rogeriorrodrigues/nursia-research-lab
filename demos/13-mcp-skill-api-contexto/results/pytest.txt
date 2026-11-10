@@ -1,0 +1,4 @@
+.
+MCP/API por pedido: 275 tokens · Skill parada: 60 · Skill depois de usada: 372
+.
+2 passed in 1.34s
