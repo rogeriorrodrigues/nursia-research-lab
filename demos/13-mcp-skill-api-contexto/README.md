@@ -16,7 +16,7 @@ python3 demo.py            # grava results/resultado.json, results/saida.txt e r
 python3 -m pytest tests -q -s
 ```
 
-CPU, sem GPU, sem chave de API, sem conta. Roda em 2 segundos. Na primeira execução o tiktoken baixa os arquivos `o200k_base` e `cl100k_base` (3,6 MB e 1,7 MB) e confere o hash deles.
+CPU, sem GPU, sem chave de API, sem conta. Os testes, que rodam a demo inteira, passaram em 1,34 s (`results/pytest.txt`). Na primeira execução o tiktoken baixa os arquivos `o200k_base` e `cl100k_base` (3,6 MB e 1,7 MB) e confere o hash deles.
 
 ## O que mostra
 
