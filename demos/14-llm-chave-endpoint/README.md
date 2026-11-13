@@ -47,7 +47,7 @@ Os controles B e C deram igual nas duas versões. O 0.37.1 respondeu "ok" nos 5 
 ## Limites honestos
 
 - **Endpoint falso, chave falsa.** Mostra o que o cliente manda; não mostra o que um terceiro faria com a chave.
-- **Só o caminho da linha de comando**, com modelo definido em `extra-openai-models.yaml`. Não testei a API Python, o modo assíncrono, plugins nem `llm openai endpoint ... --responses`, que o aviso GHSA-r639-rr7r-x72w também cita.
+- **Só o caminho da linha de comando**, com modelo definido em `extra-openai-models.yaml`. A API Python, o modo assíncrono, os plugins e o `llm openai endpoint ... --responses`, que o aviso GHSA-r639-rr7r-x72w também cita, ficam fora desta demo.
 - **5 cenários escolhidos por mim** a partir dos dois avisos. Não é varredura de todas as combinações de opção.
 - Vale pra quem usa `api_base` próprio (OpenRouter, vLLM, LM Studio, gateway da empresa) e tem chave da OpenAI no ambiente ou guardada no `llm`. Quem só usa a OpenAI direto não é afetado por essas duas falhas.
 - O que fazer: `pip install -U "llm>=0.37.2"` e, se usou `api_base` de terceiro com versão antiga, trocar a chave da OpenAI.
