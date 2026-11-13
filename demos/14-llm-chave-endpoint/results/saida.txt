@@ -1,0 +1,14 @@
+llm 0.37.1: 3 de 5 cenários mandaram a chave da OpenAI pro endpoint de terceiro
+  A | rc=0 | pedidos=1 | CHAVE DA OPENAI | api_base + api_key_name não guardada, OPENAI_API_KEY no ambiente
+  B | rc=0 | pedidos=1 | chave do terceiro | api_base + api_key_name guardada (controle: deve ir a chave do terceiro)
+  C | rc=0 | pedidos=1 | outra (DUMMY_KEY) | api_base sem api_key_name (controle: não deve ir chave nenhuma da OpenAI)
+  D | rc=0 | pedidos=1 | CHAVE DA OPENAI | responses: true + -o chat_completions 1, OPENAI_API_KEY no ambiente
+  E | rc=0 | pedidos=1 | CHAVE DA OPENAI | responses: true + -o chat_completions 1, chave 'openai' guardada com llm keys set
+llm 0.37.2: 0 de 5 cenários mandaram a chave da OpenAI pro endpoint de terceiro
+  A | rc=1 | pedidos=0 | - | api_base + api_key_name não guardada, OPENAI_API_KEY no ambiente
+      saída: Error: No key found - add one using 'llm keys set terceiro'
+  B | rc=0 | pedidos=1 | chave do terceiro | api_base + api_key_name guardada (controle: deve ir a chave do terceiro)
+  C | rc=0 | pedidos=1 | outra (DUMMY_KEY) | api_base sem api_key_name (controle: não deve ir chave nenhuma da OpenAI)
+  D | rc=0 | pedidos=1 | outra (DUMMY_KEY) | responses: true + -o chat_completions 1, OPENAI_API_KEY no ambiente
+  E | rc=0 | pedidos=1 | outra (DUMMY_KEY) | responses: true + -o chat_completions 1, chave 'openai' guardada com llm keys set
+tempo total: 8.9 s

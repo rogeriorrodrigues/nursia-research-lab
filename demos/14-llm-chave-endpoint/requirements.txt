@@ -1,0 +1,2 @@
+# a demo instala cada versao do llm num venv proprio (.venvs/), ver demo.py
+pytest==9.2.0

@@ -1,0 +1,118 @@
+{
+  "canario_openai": "sk-CANARIO-OPENAI-FALSA-0000",
+  "versoes": {
+    "0.37.1": [
+      {
+        "cenario": "A",
+        "descricao": "api_base + api_key_name não guardada, OPENAI_API_KEY no ambiente",
+        "codigo_saida": 0,
+        "pedidos_no_endpoint": 1,
+        "authorization_recebido": [
+          "CHAVE DA OPENAI"
+        ],
+        "vazou_chave_openai": true,
+        "saida_cli": "ok"
+      },
+      {
+        "cenario": "B",
+        "descricao": "api_base + api_key_name guardada (controle: deve ir a chave do terceiro)",
+        "codigo_saida": 0,
+        "pedidos_no_endpoint": 1,
+        "authorization_recebido": [
+          "chave do terceiro"
+        ],
+        "vazou_chave_openai": false,
+        "saida_cli": "ok"
+      },
+      {
+        "cenario": "C",
+        "descricao": "api_base sem api_key_name (controle: não deve ir chave nenhuma da OpenAI)",
+        "codigo_saida": 0,
+        "pedidos_no_endpoint": 1,
+        "authorization_recebido": [
+          "outra (DUMMY_KEY)"
+        ],
+        "vazou_chave_openai": false,
+        "saida_cli": "ok"
+      },
+      {
+        "cenario": "D",
+        "descricao": "responses: true + -o chat_completions 1, OPENAI_API_KEY no ambiente",
+        "codigo_saida": 0,
+        "pedidos_no_endpoint": 1,
+        "authorization_recebido": [
+          "CHAVE DA OPENAI"
+        ],
+        "vazou_chave_openai": true,
+        "saida_cli": "ok"
+      },
+      {
+        "cenario": "E",
+        "descricao": "responses: true + -o chat_completions 1, chave 'openai' guardada com llm keys set",
+        "codigo_saida": 0,
+        "pedidos_no_endpoint": 1,
+        "authorization_recebido": [
+          "CHAVE DA OPENAI"
+        ],
+        "vazou_chave_openai": true,
+        "saida_cli": "ok"
+      }
+    ],
+    "0.37.2": [
+      {
+        "cenario": "A",
+        "descricao": "api_base + api_key_name não guardada, OPENAI_API_KEY no ambiente",
+        "codigo_saida": 1,
+        "pedidos_no_endpoint": 0,
+        "authorization_recebido": [],
+        "vazou_chave_openai": false,
+        "saida_cli": "Error: No key found - add one using 'llm keys set terceiro'"
+      },
+      {
+        "cenario": "B",
+        "descricao": "api_base + api_key_name guardada (controle: deve ir a chave do terceiro)",
+        "codigo_saida": 0,
+        "pedidos_no_endpoint": 1,
+        "authorization_recebido": [
+          "chave do terceiro"
+        ],
+        "vazou_chave_openai": false,
+        "saida_cli": "ok"
+      },
+      {
+        "cenario": "C",
+        "descricao": "api_base sem api_key_name (controle: não deve ir chave nenhuma da OpenAI)",
+        "codigo_saida": 0,
+        "pedidos_no_endpoint": 1,
+        "authorization_recebido": [
+          "outra (DUMMY_KEY)"
+        ],
+        "vazou_chave_openai": false,
+        "saida_cli": "ok"
+      },
+      {
+        "cenario": "D",
+        "descricao": "responses: true + -o chat_completions 1, OPENAI_API_KEY no ambiente",
+        "codigo_saida": 0,
+        "pedidos_no_endpoint": 1,
+        "authorization_recebido": [
+          "outra (DUMMY_KEY)"
+        ],
+        "vazou_chave_openai": false,
+        "saida_cli": "ok"
+      },
+      {
+        "cenario": "E",
+        "descricao": "responses: true + -o chat_completions 1, chave 'openai' guardada com llm keys set",
+        "codigo_saida": 0,
+        "pedidos_no_endpoint": 1,
+        "authorization_recebido": [
+          "outra (DUMMY_KEY)"
+        ],
+        "vazou_chave_openai": false,
+        "saida_cli": "ok"
+      }
+    ]
+  },
+  "segundos": 8.9
+}
