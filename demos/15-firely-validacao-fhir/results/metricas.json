@@ -1,0 +1,87 @@
+{
+  "hl7.fhir.r4b": "6.8.0.0",
+  "firely.fhir.validation": "3.6.0.0",
+  "dotnet": "8.0.34",
+  "recursos": 240,
+  "montagem_ms": 239.9,
+  "primeiro_recurso_ms": 2408.5,
+  "media_regime_ms": 16.13,
+  "mediana_regime_ms": 1.42,
+  "por_categoria": {
+    "valido": {
+      "total": 60,
+      "reprovados": 0,
+      "pelo_parser": 0,
+      "pelo_validador": 0
+    },
+    "obrigatorio_ausente": {
+      "total": 20,
+      "reprovados": 20,
+      "pelo_parser": 20,
+      "pelo_validador": 20
+    },
+    "data_formato_br": {
+      "total": 20,
+      "reprovados": 20,
+      "pelo_parser": 20,
+      "pelo_validador": 20
+    },
+    "campo_desconhecido": {
+      "total": 20,
+      "reprovados": 20,
+      "pelo_parser": 20,
+      "pelo_validador": 20
+    },
+    "codigo_fora_do_conjunto": {
+      "total": 20,
+      "reprovados": 20,
+      "pelo_parser": 20,
+      "pelo_validador": 20
+    },
+    "loinc_inventado": {
+      "total": 20,
+      "reprovados": 0,
+      "pelo_parser": 0,
+      "pelo_validador": 0
+    },
+    "unidade_ucum_invalida": {
+      "total": 20,
+      "reprovados": 0,
+      "pelo_parser": 0,
+      "pelo_validador": 0
+    },
+    "referencia_quebrada": {
+      "total": 20,
+      "reprovados": 20,
+      "pelo_parser": 20,
+      "pelo_validador": 20
+    },
+    "cpf_digito_invalido": {
+      "total": 20,
+      "reprovados": 0,
+      "pelo_parser": 0,
+      "pelo_validador": 0
+    },
+    "invariante_obs6": {
+      "total": 20,
+      "reprovados": 20,
+      "pelo_parser": 0,
+      "pelo_validador": 20
+    }
+  },
+  "defeitos_total": 180,
+  "defeitos_reprovados": 120,
+  "forma_total": 80,
+  "forma_reprovados": 80,
+  "conteudo_total": 100,
+  "conteudo_reprovados": 40,
+  "validos_total": 60,
+  "validos_reprovados": 0,
+  "controle_referencia": {
+    "A_quebrada_reprovados": 0,
+    "A_quebrada_com_aviso": 0,
+    "B_correta_reprovados": 0,
+    "B_correta_com_aviso": 0,
+    "total_por_variante": 20
+  }
+}

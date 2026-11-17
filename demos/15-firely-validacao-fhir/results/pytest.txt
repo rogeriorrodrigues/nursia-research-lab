@@ -1,0 +1,4 @@
+.
+forma 80/80 · conteúdo 40/100 · total 120/180 · válidos reprovados 0/60 · referência com UUID válido 0/20
+.
+2 passed in 7.60s

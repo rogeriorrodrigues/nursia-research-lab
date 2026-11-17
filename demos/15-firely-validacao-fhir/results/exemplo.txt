@@ -1,0 +1,19 @@
+== invariante_obs6-000 · parser_reprovou=False · validador_reprovou=True
+  validador: Error 1012 Observation · Instance failed constraint obs-6 "dataAbsentReason SHALL only be present if Observation.value[x] is not present"
+
+== referencia_quebrada-000 · parser_reprovou=True · validador_reprovou=True
+  parser: string 'urn:uuid:pac-000' is not a correct literal for a uri. At Bundle.entry[0].fullUrl, line 1, position 84.
+  parser: string 'urn:uuid:obs-000' is not a correct literal for a uri. At Bundle.entry[1].fullUrl, line 1, position 356.
+  validador: Error 1006 Bundle.entry[0].fullUrl[0] · Value 'urn:uuid:pac-000' is not a valid URI
+  validador: Error 1006 Bundle.entry[1].fullUrl[0] · Value 'urn:uuid:obs-000' is not a valid URI
+
+== codigo_fora_do_conjunto-000 · parser_reprovou=True · validador_reprovou=True
+  parser: Value 'ok' is not a correct code for valueset 'ObservationStatus'. At Observation.status, line 1, position 59.
+  validador: Error 6007 Observation.status[0] · Code 'ok' does not exist in the value set 'ObservationStatus' (http://hl7.org/fhir/ValueSet/observation-status), but the binding is of strength 'required'
+
+== loinc_inventado-000 · parser_reprovou=False · validador_reprovou=False
+  (nenhuma mensagem)
+
+== cpf_digito_invalido-000 · parser_reprovou=False · validador_reprovou=False
+  (nenhuma mensagem)
+

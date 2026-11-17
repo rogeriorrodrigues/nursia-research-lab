@@ -1,0 +1,2 @@
+# o validador roda em .NET 8 (src/FirelyDemo.csproj, versões fixas lá); o Python só roda o teste
+pytest==9.2.0
