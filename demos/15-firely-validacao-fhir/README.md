@@ -58,14 +58,16 @@ var issues = validador.Validate(recurso).Issue;
 
 - Forma: 80 de 80. Conteúdo: 40 de 100, dos quais 20 pelo defeito plantado (`obs-6`). Total: 120 de 180. Válidos reprovados: 0 de 60.
 - O parser sozinho já pega os 80 de forma. A invariante `obs-6` é a única categoria que só o `Validator` pega.
-- Tempo (`results/saida.txt`, .NET 8.0.34, CPU): montagem do validador 240 ms; o primeiro recurso de cada tipo paga a compilação do perfil (Patient 2,4 s, Observation 2,9 s, Condition 0,29 s, Bundle 0,33 s); depois disso, mediana de 1,42 ms por recurso. A média de 16 ms é puxada por esses quatro. Os 240 recursos levaram 6,3 s somados. Entre três rodadas na mesma máquina a mediana ficou entre 1,33 e 1,58 ms; o resto é determinístico.
+- Tempo (`results/saida.txt`, .NET 8.0.34, CPU): montagem do validador 240 ms; o primeiro recurso de cada tipo paga a compilação do perfil (Patient 2,4 s, Observation 2,9 s, Condition 0,29 s, Bundle 0,33 s); depois disso, mediana de 1,42 ms por recurso. A média de 16 ms é puxada por esses quatro. Os 240 recursos levaram 6,3 s somados. Em duas rodadas extras na mesma máquina a mediana ficou entre 1,37 e 1,59 ms, com as mesmas contagens (`results/rodadas.txt`); o resto é determinístico.
+- `python3 conferir_perfil.py > results/perfil-base.txt` (depois do `dotnet run`) mostra o que o perfil base R4B diz sobre os três casos de conteúdo que passaram.
 - `results/raw.jsonl` guarda, por recurso, as mensagens do parser e do validador; `results/pytest.txt`, a saída do teste.
 
 ## Limites honestos
 
 - **O defeito de referência do gabarito da demo 11 estava errado.** `urn:uuid:` pede um UUID; `pac-000` não é. O HealthChain não reclamou disso, a Firely reclamou. O 20/20 da tabela mede o `fullUrl`, não a referência. O número honesto pra referência quebrada é o do controle: 0 de 20.
-- **Configuração padrão, sem perfil.** Sem `referenceResolver` e sem perfil que exija `aggregation` `bundled`, o validador não confere se a referência resolve dentro do Bundle. Não testei perfil com `aggregation` nem resolver de referência; com eles o resultado pode mudar.
-- **Terminologia só local.** LOINC não vem no pacote da especificação, e a demo não chama servidor de terminologia (tx.fhir.org ou outro). Por isso o LOINC inventado passa sem aviso. A unidade fora do UCUM também passou sem aviso no perfil base. Não testei com servidor de terminologia.
+- **O perfil base não pede o que passou.** `conferir_perfil.py` lê o `specification.zip` do pacote e grava `results/perfil-base.txt`: o binding de `Observation.code` é `example`, `Quantity.code` não tem binding (só a `qty-3`: código exige sistema) e nenhuma invariante do Bundle exige que a referência de uma entrada resolva. Os Bundles da demo são `collection`.
+- **Configuração padrão, sem perfil próprio.** Sem `referenceResolver` e sem perfil que exija `aggregation` `bundled`, o validador não confere se a referência resolve dentro do Bundle. Não testei perfil com `aggregation` nem resolver de referência; com eles o resultado pode mudar.
+- **Terminologia só local.** A demo não chama servidor de terminologia (tx.fhir.org ou outro). O LOINC inventado e a unidade fora do UCUM passaram sem aviso; o primeiro motivo é o perfil base (acima). Não testei com servidor de terminologia.
 - **CPF não é regra do FHIR.** O dígito verificador só seria checado por um perfil brasileiro com regra própria. Não validei contra perfil BR.
 - **O gabarito é meu.** 9 categorias, 20 casos cada, escolhidas por mim. O 120/180 descreve este conjunto, não FHIR real.
 - Só o caminho POCO (`Validate(Resource)`) com o deserializador estrito. Não testei `Validate(ElementNode)`, modo permissivo do parser, nem o validador Java da HL7.
@@ -76,7 +78,7 @@ var issues = validador.Validate(recurso).Issue;
 - Firely .NET SDK (`Hl7.Fhir.R4B` 6.8.0, `Hl7.Fhir.Specification.Data.R4B` 6.8.0), BSD-3-Clause: https://github.com/FirelyTeam/firely-net-sdk
 - Firely Validator API (`Firely.Fhir.Validation.R4B` 3.6.0, publicado no NuGet em 29/10/2026), BSD-3-Clause: https://github.com/FirelyTeam/firely-validator-api
 - Documentação de validação: https://docs.fire.ly/projects/Firely-NET-SDK/en/latest/validation/profile-validation.html
-- Invariante `obs-6` (FHIR R4B, Observation): https://hl7.org/fhir/R4B/observation.html#invs
+- Invariante `obs-6` (FHIR R4B, Observation): https://hl7.org/fhir/R4B/observation.html
 - Gabarito e demo anterior: [demos/11-healthchain-validacao-fhir](../11-healthchain-validacao-fhir/)
 
 NursIA é pesquisa do PPGINFOS/UFSC, com bolsa FAPESC.

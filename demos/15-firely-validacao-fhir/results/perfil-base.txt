@@ -1,0 +1,16 @@
+Observation.code: binding example -> http://hl7.org/fhir/ValueSet/observation-codes
+Quantity: qty-3 If a code for the unit is present, the system SHALL also be present
+Quantity.system: sem binding
+Quantity.code: sem binding
+Invariantes do Bundle (sem ele-/ext-):
+  Bundle: bdl-1 total only when a search or history
+  Bundle: bdl-2 entry.search only when a search
+  Bundle: bdl-3 entry.request mandatory for batch/transaction/history, otherwise prohibited
+  Bundle: bdl-4 entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited
+  Bundle: bdl-7 FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)
+  Bundle: bdl-9 A document must have an identifier with a system and a value
+  Bundle: bdl-10 A document must have a date
+  Bundle: bdl-11 A document must have a Composition as the first resource
+  Bundle: bdl-12 A message must have a MessageHeader as the first resource
+  Bundle.entry: bdl-5 must be a resource unless there's a request or response
+  Bundle.entry: bdl-8 fullUrl cannot be a version specific reference

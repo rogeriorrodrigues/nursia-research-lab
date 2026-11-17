@@ -1,0 +1,4 @@
+Mediana por recurso (sem o 1º recurso), três rodadas na mesma máquina, mesma sessão:
+  rodada gravada em results/: mediana 1.42 ms, 1º recurso 2408.5 ms, montagem 239.9 ms; contagens iguais: True
+  rodada extra 1: mediana 1.59 ms, 1º recurso 2128.6 ms, montagem 319.9 ms; contagens iguais: True
+  rodada extra 2: mediana 1.37 ms, 1º recurso 2368.6 ms, montagem 332.3 ms; contagens iguais: True
