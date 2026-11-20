@@ -1,0 +1,8 @@
+dotnet 8.0.134
+Microsoft.AspNetCore.App 8.0.34 [/usr/lib/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.NETCore.App 8.0.34 [/usr/lib/dotnet/shared/Microsoft.NETCore.App]
+ModelContextProtocol.AspNetCore 2.4.0
+Python 3.11.18
+httpx==0.28.1
+pytest==9.2.0
+tiktoken==0.14.0

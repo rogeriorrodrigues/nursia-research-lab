@@ -73,6 +73,10 @@ O trecho do log está em `results/servidor-log-trecho.txt`. A linha da chamada d
 - **Limite de chamadas.** 500 de 500 atendidas. O ASP.NET Core tem `AddRateLimiter`; o SDK não liga nada.
 - **Log de auditoria.** O log padrão é volumoso e diz qual ferramenta rodou, mas não quem pediu nem com o quê. Pra auditoria, você escreve um filtro (`WithRequestFilters(f => f.AddCallToolFilter(...))`) ou middleware que grave identidade, ferramenta, decisão e hash do argumento, nunca o dado em claro.
 
+## O que não funcionou de primeira
+
+A classe de ferramentas é `static` e eu registrei com `.WithTools<Identificadores>()`. O build quebrou com `CS0718` (tipo estático não entra como argumento genérico). Com `.WithToolsFromAssembly()`, que acha as classes marcadas com `[McpServerToolType]`, compilou com 0 avisos. Os dois builds estão em `results/build.txt`; as versões, em `results/versoes.txt`.
+
 ## Limites honestos
 
 - **Não é o tokenizador de nenhum modelo em produção.** tiktoken `o200k_base` e `cl100k_base`, iguais à demo 13, servem pra comparar C# e Python entre si.

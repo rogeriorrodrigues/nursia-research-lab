@@ -1,0 +1,8 @@
+## 1ª tentativa: .WithTools<Identificadores>() com classe static
+    0 Warning(s)
+    1 Error(s)
+Program.cs(9,6): error CS0718: 'Identificadores': static types cannot be used as type arguments [ServidorMcp.csproj]
+
+## versão do repositório: .WithToolsFromAssembly()
+    0 Warning(s)
+    0 Error(s)
