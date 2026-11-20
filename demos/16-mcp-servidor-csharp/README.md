@@ -79,7 +79,7 @@ A classe de ferramentas é `static` e eu registrei com `.WithTools<Identificador
 
 ## Limites honestos
 
-- **Não é o tokenizador de nenhum modelo em produção.** tiktoken `o200k_base` e `cl100k_base`, iguais à demo 13, servem pra comparar C# e Python entre si.
+- **Não é o tokenizador do Claude.** tiktoken `o200k_base` e `cl100k_base`, iguais à demo 13, servem pra comparar C# e Python entre si.
 - **O host pode reescrever a definição.** A demo mede o que o servidor manda; cada cliente decide o que repassa ao modelo.
 - **4 ferramentas pequenas, com parâmetro `string` e sem `[Description]` no parâmetro.** Com descrição por parâmetro ou tipos complexos o schema muda nos dois SDKs.
 - **Latência medida na mesma máquina, sem rede, sem TLS, sem modelo.** É o custo do protocolo e do ASP.NET Core, não o de uma conversa com agente.
