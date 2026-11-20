@@ -1,0 +1,5 @@
+src/bin/
+src/obj/
+results/servidor.log
+__pycache__/
+.pytest_cache/

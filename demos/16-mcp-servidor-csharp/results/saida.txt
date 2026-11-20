@@ -1,0 +1,22 @@
+servidor: {'name': 'ServidorMcp', 'version': '1.0.0.0'}  partida até responder: 450 ms
+ferramentas: validar_cpf, validar_cns, mascarar_identificadores, contar_identificadores
+campos title no tools/list: C# 0 · Python (demo 13) 14
+outputSchema presente em: nenhuma
+
+tokens (o200k_base / cl100k_base)
+  C#  tools/list inteiro           225 / 232
+  C#  definições pro modelo        223 / 231
+  Py  definições (demo 13)         275 / 283
+  Py  sem title (demo 13)          223 / 231
+
+mascarar igual à demo 13: True
+contar: {"cpf_validos":1,"cpf_invalidos":1,"cns_validos":1,"cns_invalidos":0}
+chamada (n=200): mediana 1.83 ms · p95 2.26 ms · máx 5.94 ms
+
+autenticação:
+  sem_header_nenhum: initialize 200 · tools/call 200 · devolveu o texto True
+  token_inventado: initialize 200 · tools/call 200 · devolveu o texto True
+  origin_de_fora: initialize 200 · tools/call 200 · devolveu o texto True
+
+rajada: 500 chamadas em 1.16 s · 200: 500 · 429: 0 · outros: 0
+log padrão: 10702 linhas · citam tools/call: 1450 · citam nome de ferramenta: 725 · CPF no log: False

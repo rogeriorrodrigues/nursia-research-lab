@@ -1,0 +1,8 @@
+
+C#: 223 | Python demo 13: 275 | Python sem title: 223
+...sem_header_nenhum {'initialize': 200, 'tools_call': 200, 'devolveu_texto_mascarado': True}
+token_inventado {'initialize': 200, 'tools_call': 200, 'devolveu_texto_mascarado': True}
+origin_de_fora {'initialize': 200, 'tools_call': 200, 'devolveu_texto_mascarado': True}
+.rajada: {'chamadas': 500, 'status_200': 500, 'status_429': 0, 'outros': 0, 'segundos': 1.16}
+..
+6 passed in 0.31s

@@ -1,0 +1,64 @@
+{
+  "tools": [
+    {
+      "name": "validar_cpf",
+      "description": "Confere os dois dígitos verificadores de um CPF (11 dígitos, com ou sem pontuação).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "cpf": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "cpf"
+        ]
+      }
+    },
+    {
+      "name": "validar_cns",
+      "description": "Confere o Cartão Nacional de Saúde (15 dígitos) pela soma ponderada módulo 11.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "cns": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "cns"
+        ]
+      }
+    },
+    {
+      "name": "mascarar_identificadores",
+      "description": "Troca CPF e CNS válidos do texto por [CPF] e [CNS]. Número inválido fica como está.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "texto": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "texto"
+        ]
+      }
+    },
+    {
+      "name": "contar_identificadores",
+      "description": "Conta quantos CPF e CNS válidos e inválidos aparecem no texto, sem devolver os números.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "texto": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "texto"
+        ]
+      }
+    }
+  ]
+}

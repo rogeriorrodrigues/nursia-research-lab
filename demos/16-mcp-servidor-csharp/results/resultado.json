@@ -1,0 +1,85 @@
+{
+  "initialize_status": 200,
+  "server_info": {
+    "name": "ServidorMcp",
+    "version": "1.0.0.0"
+  },
+  "ferramentas": [
+    "validar_cpf",
+    "validar_cns",
+    "mascarar_identificadores",
+    "contar_identificadores"
+  ],
+  "output_schema_presente": [],
+  "schema_exemplo": {
+    "type": "object",
+    "properties": {
+      "cpf": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "cpf"
+    ]
+  },
+  "campos_title_no_tools_list": 0,
+  "tokens": {
+    "csharp_tools_list_resposta_inteira": {
+      "o200k_base": 225,
+      "cl100k_base": 232
+    },
+    "csharp_definicoes_pro_modelo": {
+      "o200k_base": 223,
+      "cl100k_base": 231
+    },
+    "python_definicoes_pro_modelo_demo13": {
+      "o200k_base": 275,
+      "cl100k_base": 283
+    },
+    "python_sem_title_demo13": {
+      "o200k_base": 223,
+      "cl100k_base": 231
+    }
+  },
+  "python_campos_title_demo13": 14,
+  "mascarar_saida": "Paciente FULANO DE TAL SINTETICO, CPF [CPF], CNS [CNS]. Retorno em 7 dias. CPF do acompanhante 111.222.333-00 (digitado errado).",
+  "mascarar_igual_demo13": true,
+  "contar_saida": "{\"cpf_validos\":1,\"cpf_invalidos\":1,\"cns_validos\":1,\"cns_invalidos\":0}",
+  "chamada_ms": {
+    "n": 200,
+    "mediana": 1.83,
+    "p95": 2.26,
+    "max": 5.94
+  },
+  "autenticacao": {
+    "sem_header_nenhum": {
+      "initialize": 200,
+      "tools_call": 200,
+      "devolveu_texto_mascarado": true
+    },
+    "token_inventado": {
+      "initialize": 200,
+      "tools_call": 200,
+      "devolveu_texto_mascarado": true
+    },
+    "origin_de_fora": {
+      "initialize": 200,
+      "tools_call": 200,
+      "devolveu_texto_mascarado": true
+    }
+  },
+  "rajada": {
+    "chamadas": 500,
+    "status_200": 500,
+    "status_429": 0,
+    "outros": 0,
+    "segundos": 1.16
+  },
+  "partida_ms": 450,
+  "log_padrao": {
+    "linhas": 10702,
+    "linhas_que_citam_tools_call": 1450,
+    "linhas_que_citam_nome_de_ferramenta": 725,
+    "cpf_da_nota_aparece_no_log": false
+  }
+}
