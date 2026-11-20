@@ -2,7 +2,7 @@
 
 As mesmas 4 ferramentas da [demo 13](../13-mcp-skill-api-contexto/) (validar CPF, validar CNS, mascarar e contar identificadores), agora num servidor MCP em C# com o pacote `ModelContextProtocol.AspNetCore` 2.4.0, por HTTP em 127.0.0.1. Um script em Python fala JSON-RPC cru com o servidor, sem SDK de cliente, e mede o que trafega.
 
-Resultado: o `tools/list` do C# custa **223 tokens** por pedido (tiktoken `o200k_base`), o mesmo que a definição escrita à mão, contra **275** do servidor em Python da demo 13. O C# não gera os campos `title` no JSON Schema (**0 contra 14**). O resto que a demo mede vem aberto: sem header nenhum, com token inventado e com `Origin` de outro site, o servidor respondeu **200** e devolveu o texto mascarado nos três casos; uma rajada de **500 chamadas** levou **0** respostas 429; e o log padrão registra o nome da ferramenta e o tempo, mas não quem chamou nem o argumento.
+Resultado: o `tools/list` do C# custa **223 tokens** por pedido (tiktoken `o200k_base`), o mesmo que a definição escrita à mão, contra **275** do servidor em Python da demo 13. O C# não gera os campos `title` no JSON Schema (**0 contra 14**). O resto que a demo mede vem aberto: sem header nenhum, com token inventado e com `Origin` de outro site, o servidor respondeu **200** e devolveu o texto mascarado nos três casos; uma rajada de **500 chamadas** levou **0** respostas 429; e o log padrão registra o nome da ferramenta (e, noutra linha, o tempo), mas não quem chamou nem o argumento.
 
 *English: The same 4 tools as demo 13, served by a C# MCP server with the official SDK (`ModelContextProtocol.AspNetCore` 2.4.0, .NET 8, streamable HTTP on 127.0.0.1), measured from the outside with raw JSON-RPC. `tools/list` costs 223 tokens per request (tiktoken o200k_base), the same as hand-written definitions, versus 275 for the Python SDK server in demo 13: the C# schema has no `title` fields (0 vs 14). Out of the box there is no auth (no header, a made-up bearer token and a foreign `Origin` all got 200), no rate limit (500/500 calls answered, 0 HTTP 429) and the default log has tool name and duration but not caller or arguments. Median tool call: 1.83 ms on localhost.*
 
@@ -64,7 +64,7 @@ app.Run(args.Length > 0 ? args[0] : "http://127.0.0.1:5088");
 | rajada de 500 chamadas (1,16 s) | 500 com 200 · 0 com 429 |
 | log padrão (nível Information) | 10.702 linhas; 725 citam o nome da ferramenta; o CPF da nota não aparece |
 
-O trecho do log está em `results/servidor-log-trecho.txt`. A linha da chamada diz `"mascarar_identificadores" completed. IsError = False.` e o tempo. Quem chamou só aparece no `initialize`, pelo nome que o próprio cliente declarou (`Client (demo16 1)`).
+O trecho do log está em `results/servidor-log-trecho.txt`. A linha da chamada diz `"mascarar_identificadores" completed. IsError = False.`; a seguinte dá o tempo do `tools/call`, sem o nome da ferramenta. Quem chamou só aparece no `initialize`, pelo nome que o próprio cliente declarou (`Client (demo16 1)`).
 
 ## O que o SDK não fez por mim nesta demo
 
