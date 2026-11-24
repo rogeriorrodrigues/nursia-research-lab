@@ -64,7 +64,7 @@ O `.pth` executável que existia é o do setuptools, legítimo: `import os; var 
 
 ## Limites honestos
 
-- **5 pacotes, uma data, um sistema.** Linux, pacotes nas versões de `requirements-ia.txt`, 23/11/2026. Outros pacotes trazem `.pth` com `import` de propósito (ferramenta de cobertura, de instrumentação, instalação editável de outros backends). Zero aqui não é zero no seu ambiente.
+- **5 pacotes, uma data, um sistema.** Linux, pacotes nas versões de `requirements-ia.txt`, 23/11/2026. Outros pacotes podem trazer `.pth` com `import`, legítimo ou não. Zero aqui não é zero no seu ambiente.
 - **A varredura acha, não julga.** Ela conta linha executável; não diz se a linha é maliciosa. O `.pth` do setuptools é legítimo e vai aparecer em quase todo ambiente de CI.
 - **Não olha `sitecustomize.py`, `usercustomize.py` nem os arquivos `.start`** (novos no Python 3.15, segundo a documentação do `site` no ramo main do CPython). São outros caminhos de código que rodam na partida.
 - **`-I` não protege disso.** Ele desliga o site do usuário e as variáveis `PYTHON*`, mas o `site-packages` do venv continua sendo processado. Só `-S` desliga, e aí os pacotes instalados somem do `sys.path`.
