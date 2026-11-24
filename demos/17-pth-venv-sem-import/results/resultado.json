@@ -1,0 +1,144 @@
+[
+  {
+    "versao": "3.11.18",
+    "E0_venv_vazio": {
+      "pth_total": 1,
+      "pth_com_executavel": 1,
+      "linhas_executaveis": 1,
+      "varredura_ms": 0.31,
+      "arquivos": [
+        "distutils-precedence.pth (1 exec)"
+      ]
+    },
+    "E1_mais_5_pacotes_ia": {
+      "pth_total": 1,
+      "pth_com_executavel": 1,
+      "linhas_executaveis": 1,
+      "varredura_ms": 0.3,
+      "arquivos": [
+        "distutils-precedence.pth (1 exec)"
+      ]
+    },
+    "E2_mais_setuptools": {
+      "pth_total": 1,
+      "pth_com_executavel": 1,
+      "linhas_executaveis": 1,
+      "varredura_ms": 0.48,
+      "arquivos": [
+        "distutils-precedence.pth (1 exec)"
+      ]
+    },
+    "E3_mais_editavel": {
+      "pth_total": 2,
+      "pth_com_executavel": 1,
+      "linhas_executaveis": 1,
+      "varredura_ms": 0.35,
+      "arquivos": [
+        "__editable__.paciente_ficticio-0.0.1.pth (0 exec)",
+        "distutils-precedence.pth (1 exec)"
+      ]
+    },
+    "pacotes_no_venv": 49,
+    "marca_apareceu": {
+      "padrao": true,
+      "-I (isolado)": true,
+      "-s (sem site do usuario)": true,
+      "-E (ignora PYTHON*)": true,
+      "-S (sem modulo site)": false,
+      "pip --version (padrao)": true
+    },
+    "import_openai_com_-S": "ModuleNotFoundError: No module named 'openai'"
+  },
+  {
+    "versao": "3.12.3",
+    "E0_venv_vazio": {
+      "pth_total": 0,
+      "pth_com_executavel": 0,
+      "linhas_executaveis": 0,
+      "varredura_ms": 0.21,
+      "arquivos": []
+    },
+    "E1_mais_5_pacotes_ia": {
+      "pth_total": 0,
+      "pth_com_executavel": 0,
+      "linhas_executaveis": 0,
+      "varredura_ms": 0.32,
+      "arquivos": []
+    },
+    "E2_mais_setuptools": {
+      "pth_total": 1,
+      "pth_com_executavel": 1,
+      "linhas_executaveis": 1,
+      "varredura_ms": 0.36,
+      "arquivos": [
+        "distutils-precedence.pth (1 exec)"
+      ]
+    },
+    "E3_mais_editavel": {
+      "pth_total": 2,
+      "pth_com_executavel": 1,
+      "linhas_executaveis": 1,
+      "varredura_ms": 0.37,
+      "arquivos": [
+        "__editable__.paciente_ficticio-0.0.1.pth (0 exec)",
+        "distutils-precedence.pth (1 exec)"
+      ]
+    },
+    "pacotes_no_venv": 49,
+    "marca_apareceu": {
+      "padrao": true,
+      "-I (isolado)": true,
+      "-s (sem site do usuario)": true,
+      "-E (ignora PYTHON*)": true,
+      "-S (sem modulo site)": false,
+      "pip --version (padrao)": true
+    },
+    "import_openai_com_-S": "ModuleNotFoundError: No module named 'openai'"
+  },
+  {
+    "versao": "3.13.18",
+    "E0_venv_vazio": {
+      "pth_total": 0,
+      "pth_com_executavel": 0,
+      "linhas_executaveis": 0,
+      "varredura_ms": 0.26,
+      "arquivos": []
+    },
+    "E1_mais_5_pacotes_ia": {
+      "pth_total": 0,
+      "pth_com_executavel": 0,
+      "linhas_executaveis": 0,
+      "varredura_ms": 0.48,
+      "arquivos": []
+    },
+    "E2_mais_setuptools": {
+      "pth_total": 1,
+      "pth_com_executavel": 1,
+      "linhas_executaveis": 1,
+      "varredura_ms": 0.49,
+      "arquivos": [
+        "distutils-precedence.pth (1 exec)"
+      ]
+    },
+    "E3_mais_editavel": {
+      "pth_total": 2,
+      "pth_com_executavel": 1,
+      "linhas_executaveis": 1,
+      "varredura_ms": 0.4,
+      "arquivos": [
+        "__editable__.paciente_ficticio-0.0.1.pth (0 exec)",
+        "distutils-precedence.pth (1 exec)"
+      ]
+    },
+    "pacotes_no_venv": 49,
+    "marca_apareceu": {
+      "padrao": true,
+      "-I (isolado)": true,
+      "-s (sem site do usuario)": true,
+      "-E (ignora PYTHON*)": true,
+      "-S (sem modulo site)": false,
+      "pip --version (padrao)": true
+    },
+    "import_openai_com_-S": "ModuleNotFoundError: No module named 'openai'"
+  }
+]
