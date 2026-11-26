@@ -1,0 +1,76 @@
+{
+  "versoes": {
+    "python": "3.11.18",
+    "pydicom": "3.0.2",
+    "deid": "0.4.13"
+  },
+  "plantado_antes": {
+    "CNS": 60,
+    "CPF": 60,
+    "endereco": 60,
+    "instituicao": 60,
+    "nascimento": 60,
+    "nome": 60,
+    "telefone": 60
+  },
+  "cenarios": [
+    {
+      "cenario": "A receita padrao do deid",
+      "arquivos": 60,
+      "arquivos_com_vazamento": 60,
+      "arquivos_com_cpf_ou_cns": 47,
+      "arquivos_com_dado_pessoal": 55,
+      "por_tipo": {
+        "CNS": 26,
+        "CPF": 43,
+        "instituicao": 60,
+        "nome": 44,
+        "telefone": 21
+      },
+      "por_campo": {
+        "InstitutionName": 60,
+        "privada": 30,
+        "ScheduledProcedureStepDescription": 27,
+        "ImageComments": 26,
+        "StudyDescription": 23,
+        "RequestedProcedureDescription": 21
+      },
+      "sem_os_3_UIDs": 60,
+      "ms_total": 664.0
+    },
+    {
+      "cenario": "B padrao + remove_private=True",
+      "arquivos": 60,
+      "arquivos_com_vazamento": 60,
+      "arquivos_com_cpf_ou_cns": 36,
+      "arquivos_com_dado_pessoal": 52,
+      "por_tipo": {
+        "CNS": 26,
+        "CPF": 23,
+        "instituicao": 60,
+        "nome": 44,
+        "telefone": 21
+      },
+      "por_campo": {
+        "InstitutionName": 60,
+        "ScheduledProcedureStepDescription": 27,
+        "ImageComments": 26,
+        "StudyDescription": 23,
+        "RequestedProcedureDescription": 21
+      },
+      "sem_os_3_UIDs": 60,
+      "ms_total": 550.8
+    },
+    {
+      "cenario": "C receita_br.dicom + remove_private=True",
+      "arquivos": 60,
+      "arquivos_com_vazamento": 0,
+      "arquivos_com_cpf_ou_cns": 0,
+      "arquivos_com_dado_pessoal": 0,
+      "por_tipo": {},
+      "por_campo": {},
+      "sem_os_3_UIDs": 60,
+      "ms_total": 372.5
+    }
+  ]
+}

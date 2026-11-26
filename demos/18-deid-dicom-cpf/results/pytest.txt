@@ -1,0 +1,5 @@
+
+[padrao] arquivos com CPF depois do deid: 17 de 20
+[padrao] arquivos com tag privada: 12 de 20
+.
+2 passed in 0.89s

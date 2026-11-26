@@ -1,0 +1,21 @@
+versoes: {'python': '3.11.18', 'pydicom': '3.0.2', 'deid': '0.4.13'}
+plantado (arquivos com cada tipo, de 60): {'CNS': 60, 'CPF': 60, 'endereco': 60, 'instituicao': 60, 'nascimento': 60, 'nome': 60, 'telefone': 60}
+
+[A receita padrao do deid] arquivos com algum identificador: 60 de 60
+  com CPF ou CNS inteiro: 47 · com dado pessoal (sem contar instituicao): 55
+  por tipo: {'CNS': 26, 'CPF': 43, 'instituicao': 60, 'nome': 44, 'telefone': 21}
+  por campo: {'InstitutionName': 60, 'privada': 30, 'ScheduledProcedureStepDescription': 27, 'ImageComments': 26, 'StudyDescription': 23, 'RequestedProcedureDescription': 21}
+  sem SOP, Study e Series Instance UID: 60 de 60 · tempo total: 664.0 ms
+
+[B padrao + remove_private=True] arquivos com algum identificador: 60 de 60
+  com CPF ou CNS inteiro: 36 · com dado pessoal (sem contar instituicao): 52
+  por tipo: {'CNS': 26, 'CPF': 23, 'instituicao': 60, 'nome': 44, 'telefone': 21}
+  por campo: {'InstitutionName': 60, 'ScheduledProcedureStepDescription': 27, 'ImageComments': 26, 'StudyDescription': 23, 'RequestedProcedureDescription': 21}
+  sem SOP, Study e Series Instance UID: 60 de 60 · tempo total: 550.8 ms
+
+[C receita_br.dicom + remove_private=True] arquivos com algum identificador: 0 de 60
+  com CPF ou CNS inteiro: 0 · com dado pessoal (sem contar instituicao): 0
+  por tipo: {}
+  por campo: {}
+  sem SOP, Study e Series Instance UID: 60 de 60 · tempo total: 372.5 ms
+

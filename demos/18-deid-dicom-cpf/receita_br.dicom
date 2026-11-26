@@ -1,0 +1,11 @@
+FORMAT dicom
+
+%header
+
+REMOVE StudyDescription
+REMOVE ImageComments
+REMOVE RequestedProcedureDescription
+REMOVE ScheduledProcedureStepDescription
+REMOVE InstitutionName
+REMOVE InstitutionAddress
+REMOVE PatientTelephoneNumbers
