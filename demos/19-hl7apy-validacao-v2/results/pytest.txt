@@ -1,0 +1,9 @@
+.cpf_digito_errado: 5/5 aceitas no STRICT
+cns_invalido: 5/5 aceitas no STRICT
+sexo_fora_da_tabela: 5/5 aceitas no STRICT
+nascimento_no_futuro: 5/5 aceitas no STRICT
+fora_de_ordem: 5/5 aceitas no STRICT
+.data_invalida: STRICT reprovou 5/5, TOLERANT 0/5
+.regras_br: 80/80 de conteúdo, 0/40 válidas reprovadas
+.
+4 passed in 0.98s

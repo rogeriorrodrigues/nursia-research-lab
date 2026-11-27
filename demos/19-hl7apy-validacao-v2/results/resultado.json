@@ -1,0 +1,264 @@
+{
+  "hl7apy": "1.3.5",
+  "python": "3.11.18",
+  "resumo": {
+    "TOLERANT": {
+      "defeituosas_reprovadas": 60,
+      "defeituosas": 200,
+      "forma": [
+        60,
+        120
+      ],
+      "conteudo": [
+        0,
+        80
+      ],
+      "validas_reprovadas": 0,
+      "fora_de_ordem_aceitas_e_reordenadas": 0
+    },
+    "STRICT": {
+      "defeituosas_reprovadas": 100,
+      "defeituosas": 200,
+      "forma": [
+        100,
+        120
+      ],
+      "conteudo": [
+        0,
+        80
+      ],
+      "validas_reprovadas": 0,
+      "fora_de_ordem_aceitas_e_reordenadas": 20
+    }
+  },
+  "regras_br": {
+    "valida": {
+      "aceitas_strict": 40,
+      "pegas_pelas_regras": 0
+    },
+    "fora_de_ordem": {
+      "aceitas_strict": 20,
+      "pegas_pelas_regras": 20
+    },
+    "cpf_digito_errado": {
+      "aceitas_strict": 20,
+      "pegas_pelas_regras": 20
+    },
+    "cns_invalido": {
+      "aceitas_strict": 20,
+      "pegas_pelas_regras": 20
+    },
+    "sexo_fora_da_tabela": {
+      "aceitas_strict": 20,
+      "pegas_pelas_regras": 20
+    },
+    "nascimento_no_futuro": {
+      "aceitas_strict": 20,
+      "pegas_pelas_regras": 20
+    }
+  },
+  "detalhe": {
+    "TOLERANT": {
+      "por_tipo": {
+        "valida": {
+          "total": 40,
+          "reprovadas": 0,
+          "etapas": {},
+          "exemplo_erro": "",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "sem_pid": {
+          "total": 20,
+          "reprovadas": 20,
+          "etapas": {
+            "validate": 20
+          },
+          "exemplo_erro": "ValidationError: Missing required child ADT_A01.PID",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "sem_nome": {
+          "total": 20,
+          "reprovadas": 20,
+          "etapas": {
+            "validate": 20
+          },
+          "exemplo_erro": "ValidationError: Missing required child PID.PID_5",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "data_invalida": {
+          "total": 20,
+          "reprovadas": 0,
+          "etapas": {},
+          "exemplo_erro": "",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "campo_longo": {
+          "total": 20,
+          "reprovadas": 0,
+          "etapas": {},
+          "exemplo_erro": "",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "pid_duplicado": {
+          "total": 20,
+          "reprovadas": 20,
+          "etapas": {
+            "validate": 20
+          },
+          "exemplo_erro": "ValidationError: Child limit exceeded ADT_A01.PID",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "fora_de_ordem": {
+          "total": 20,
+          "reprovadas": 0,
+          "etapas": {},
+          "exemplo_erro": "",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "cpf_digito_errado": {
+          "total": 20,
+          "reprovadas": 0,
+          "etapas": {},
+          "exemplo_erro": "",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "cns_invalido": {
+          "total": 20,
+          "reprovadas": 0,
+          "etapas": {},
+          "exemplo_erro": "",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "sexo_fora_da_tabela": {
+          "total": 20,
+          "reprovadas": 0,
+          "etapas": {},
+          "exemplo_erro": "",
+          "aceitas_com_aviso": 20,
+          "exemplo_aviso": "Warning: Value H not in table HL70001 in element PID.PID_8"
+        },
+        "nascimento_no_futuro": {
+          "total": 20,
+          "reprovadas": 0,
+          "etapas": {},
+          "exemplo_erro": "",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        }
+      },
+      "fora_de_ordem_aceitas_e_reordenadas": 0
+    },
+    "STRICT": {
+      "por_tipo": {
+        "valida": {
+          "total": 40,
+          "reprovadas": 0,
+          "etapas": {},
+          "exemplo_erro": "",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "sem_pid": {
+          "total": 20,
+          "reprovadas": 20,
+          "etapas": {
+            "validate": 20
+          },
+          "exemplo_erro": "ValidationError: Missing required child ADT_A01.PID",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "sem_nome": {
+          "total": 20,
+          "reprovadas": 20,
+          "etapas": {
+            "validate": 20
+          },
+          "exemplo_erro": "ValidationError: Missing required child PID.PID_5",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "data_invalida": {
+          "total": 20,
+          "reprovadas": 20,
+          "etapas": {
+            "parse": 20
+          },
+          "exemplo_erro": "ValueError: 19681312 is not an HL7 valid date value",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "campo_longo": {
+          "total": 20,
+          "reprovadas": 20,
+          "etapas": {
+            "parse": 20
+          },
+          "exemplo_erro": "MaxLengthReached: The value SOUZA TESTE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "pid_duplicado": {
+          "total": 20,
+          "reprovadas": 20,
+          "etapas": {
+            "parse": 20
+          },
+          "exemplo_erro": "MaxChildLimitReached: Cannot add <Segment PID>: max limit (1) reached for <Message ADT_A01>",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "fora_de_ordem": {
+          "total": 20,
+          "reprovadas": 0,
+          "etapas": {},
+          "exemplo_erro": "",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "cpf_digito_errado": {
+          "total": 20,
+          "reprovadas": 0,
+          "etapas": {},
+          "exemplo_erro": "",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "cns_invalido": {
+          "total": 20,
+          "reprovadas": 0,
+          "etapas": {},
+          "exemplo_erro": "",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        },
+        "sexo_fora_da_tabela": {
+          "total": 20,
+          "reprovadas": 0,
+          "etapas": {},
+          "exemplo_erro": "",
+          "aceitas_com_aviso": 20,
+          "exemplo_aviso": "Warning: Value H not in table HL70001 in element PID.PID_8"
+        },
+        "nascimento_no_futuro": {
+          "total": 20,
+          "reprovadas": 0,
+          "etapas": {},
+          "exemplo_erro": "",
+          "aceitas_com_aviso": 0,
+          "exemplo_aviso": ""
+        }
+      },
+      "fora_de_ordem_aceitas_e_reordenadas": 20
+    }
+  }
+}

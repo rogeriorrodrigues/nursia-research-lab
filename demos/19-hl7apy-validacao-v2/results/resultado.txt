@@ -1,0 +1,48 @@
+hl7apy 1.3.5 · Python 3.11.18 · Linux
+nível padrão do parse_message(): TOLERANT
+mensagens: 240 (40 válidas, 120 com defeito de forma, 80 com defeito de conteúdo)
+
+tipo                    grupo       TOLERANT    STRICT
+valida                  valida        0/40      0/40  
+sem_pid                 forma        20/20     20/20  
+sem_nome                forma        20/20     20/20  
+data_invalida           forma         0/20     20/20  
+campo_longo             forma         0/20     20/20  
+pid_duplicado           forma        20/20     20/20  
+fora_de_ordem           forma         0/20      0/20  
+cpf_digito_errado       conteudo      0/20      0/20  
+cns_invalido            conteudo      0/20      0/20  
+sexo_fora_da_tabela     conteudo      0/20      0/20  
+nascimento_no_futuro    conteudo      0/20      0/20  
+
+TOLERANT: reprovou 60 de 200 com defeito (forma 60/120, conteúdo 0/80); válidas reprovadas: 0/40; fora de ordem aceitas e reserializadas em outra ordem: 0/20
+STRICT: reprovou 100 de 200 com defeito (forma 100/120, conteúdo 0/80); válidas reprovadas: 0/40; fora de ordem aceitas e reserializadas em outra ordem: 20/20
+
+exemplo de erro por tipo (STRICT):
+  sem_pid: ValidationError: Missing required child ADT_A01.PID
+  sem_nome: ValidationError: Missing required child PID.PID_5
+  data_invalida: ValueError: 19681312 is not an HL7 valid date value
+  campo_longo: MaxLengthReached: The value SOUZA TESTE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  pid_duplicado: MaxChildLimitReached: Cannot add <Segment PID>: max limit (1) reached for <Message ADT_A01>
+  fora_de_ordem: (aceita)
+  cpf_digito_errado: (aceita)
+  cns_invalido: (aceita)
+  sexo_fora_da_tabela: (aceita)
+  nascimento_no_futuro: (aceita)
+
+aceitas pelo validate() (True), mas com aviso no report_file (STRICT):
+  valida: 0/40 
+  fora_de_ordem: 0/20 
+  cpf_digito_errado: 0/20 
+  cns_invalido: 0/20 
+  sexo_fora_da_tabela: 20/20 Warning: Value H not in table HL70001 in element PID.PID_8
+  nascimento_no_futuro: 0/20 
+
+regras_br() (ordem, CPF, CNS, sexo, nascimento) no que o STRICT aceitou:
+  valida: pegou 0/40
+  fora_de_ordem: pegou 20/20
+  cpf_digito_errado: pegou 20/20
+  cns_invalido: pegou 20/20
+  sexo_fora_da_tabela: pegou 20/20
+  nascimento_no_futuro: pegou 20/20
+STRICT + regras_br(): reprovou 200 de 200 com defeito; válidas reprovadas: 0/40
